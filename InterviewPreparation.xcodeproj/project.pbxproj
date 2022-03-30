@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1863ABA727EC233000575DEC /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863ABA627EC233000575DEC /* ErrorMessages.swift */; };
+		18AA863427F4270E0069610E /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA863327F4270E0069610E /* UITableView+Extension.swift */; };
+		18AA863A27F427E20069610E /* ListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA863827F427E20069610E /* ListTableCell.swift */; };
+		18AA863B27F427E20069610E /* ListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AA863927F427E20069610E /* ListTableCell.xib */; };
+		18AA864027F431480069610E /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA863F27F431480069610E /* Array+Extension.swift */; };
+		18AA864627F435D50069610E /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA864427F435D50069610E /* CombineViewController.swift */; };
+		18AA864727F435D50069610E /* CombineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AA864527F435D50069610E /* CombineViewController.xib */; };
+		18AA864D27F4389B0069610E /* CombineViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA864C27F4389B0069610E /* CombineViewModal.swift */; };
 		18C57C4127EB1A7800F2AA77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C57C4027EB1A7800F2AA77 /* AppDelegate.swift */; };
 		18C57C4327EB1A7800F2AA77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C57C4227EB1A7800F2AA77 /* SceneDelegate.swift */; };
 		18C57C4527EB1A7800F2AA77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C57C4427EB1A7800F2AA77 /* ViewController.swift */; };
@@ -16,6 +24,10 @@
 		18C57C5027EB1A7B00F2AA77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C57C4E27EB1A7B00F2AA77 /* LaunchScreen.storyboard */; };
 		18C57C5B27EB1A7B00F2AA77 /* InterviewPreparationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C57C5A27EB1A7B00F2AA77 /* InterviewPreparationTests.swift */; };
 		18C57C6627EB1A7B00F2AA77 /* InterviewPreparationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C57C6527EB1A7B00F2AA77 /* InterviewPreparationUITests.swift */; };
+		18C57C7F27EB1EB000F2AA77 /* FirstViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C57C7E27EB1EB000F2AA77 /* FirstViewModal.swift */; };
+		18C57C8827EB37B200F2AA77 /* EmployeeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C57C8627EB37B200F2AA77 /* EmployeeTableCell.swift */; };
+		18C57C8927EB37B200F2AA77 /* EmployeeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C57C8727EB37B200F2AA77 /* EmployeeTableCell.xib */; };
+		18C57C8E27EB456500F2AA77 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C57C8D27EB456500F2AA77 /* Employee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1863ABA627EC233000575DEC /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
+		18AA863327F4270E0069610E /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		18AA863827F427E20069610E /* ListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableCell.swift; sourceTree = "<group>"; };
+		18AA863927F427E20069610E /* ListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableCell.xib; sourceTree = "<group>"; };
+		18AA863F27F431480069610E /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		18AA864427F435D50069610E /* CombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
+		18AA864527F435D50069610E /* CombineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CombineViewController.xib; sourceTree = "<group>"; };
+		18AA864C27F4389B0069610E /* CombineViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewModal.swift; sourceTree = "<group>"; };
 		18C57C3D27EB1A7800F2AA77 /* InterviewPreparation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewPreparation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C57C4027EB1A7800F2AA77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C57C4227EB1A7800F2AA77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +71,10 @@
 		18C57C6127EB1A7B00F2AA77 /* InterviewPreparationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewPreparationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C57C6527EB1A7B00F2AA77 /* InterviewPreparationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewPreparationUITests.swift; sourceTree = "<group>"; };
 		18C57C6727EB1A7B00F2AA77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C57C7E27EB1EB000F2AA77 /* FirstViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModal.swift; sourceTree = "<group>"; };
+		18C57C8627EB37B200F2AA77 /* EmployeeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableCell.swift; sourceTree = "<group>"; };
+		18C57C8727EB37B200F2AA77 /* EmployeeTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableCell.xib; sourceTree = "<group>"; };
+		18C57C8D27EB456500F2AA77 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18AA864B27F436010069610E /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				18AA864427F435D50069610E /* CombineViewController.swift */,
+				18AA864527F435D50069610E /* CombineViewController.xib */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
 		18C57C3427EB1A7800F2AA77 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +134,14 @@
 		18C57C3F27EB1A7800F2AA77 /* InterviewPreparation */ = {
 			isa = PBXGroup;
 			children = (
-				18C57C4027EB1A7800F2AA77 /* AppDelegate.swift */,
-				18C57C4227EB1A7800F2AA77 /* SceneDelegate.swift */,
-				18C57C4427EB1A7800F2AA77 /* ViewController.swift */,
-				18C57C4627EB1A7800F2AA77 /* Main.storyboard */,
+				18C57C7D27EB1AF600F2AA77 /* Resource */,
+				18C57C7C27EB1AD800F2AA77 /* DefaultFiles */,
+				18C57C7B27EB1AC600F2AA77 /* Managers */,
+				18C57C7A27EB1ABE00F2AA77 /* Extension */,
+				18C57C7927EB1AA900F2AA77 /* Utility */,
+				18C57C7827EB1AA300F2AA77 /* Modal */,
+				18C57C7727EB1A9600F2AA77 /* ViewModal */,
+				18C57C7627EB1A9000F2AA77 /* View */,
 				18C57C4C27EB1A7B00F2AA77 /* Assets.xcassets */,
 				18C57C4E27EB1A7B00F2AA77 /* LaunchScreen.storyboard */,
 				18C57C5127EB1A7B00F2AA77 /* Info.plist */,
@@ -129,6 +166,77 @@
 				18C57C6727EB1A7B00F2AA77 /* Info.plist */,
 			);
 			path = InterviewPreparationUITests;
+			sourceTree = "<group>";
+		};
+		18C57C7627EB1A9000F2AA77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18AA864B27F436010069610E /* Combine */,
+				18C57C4427EB1A7800F2AA77 /* ViewController.swift */,
+				18C57C8627EB37B200F2AA77 /* EmployeeTableCell.swift */,
+				18C57C8727EB37B200F2AA77 /* EmployeeTableCell.xib */,
+				18AA863827F427E20069610E /* ListTableCell.swift */,
+				18AA863927F427E20069610E /* ListTableCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18C57C7727EB1A9600F2AA77 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				18C57C7E27EB1EB000F2AA77 /* FirstViewModal.swift */,
+				18AA864C27F4389B0069610E /* CombineViewModal.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		18C57C7827EB1AA300F2AA77 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				18C57C8D27EB456500F2AA77 /* Employee.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		18C57C7927EB1AA900F2AA77 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1863ABA627EC233000575DEC /* ErrorMessages.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		18C57C7A27EB1ABE00F2AA77 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18AA863F27F431480069610E /* Array+Extension.swift */,
+				18AA863327F4270E0069610E /* UITableView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		18C57C7B27EB1AC600F2AA77 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		18C57C7C27EB1AD800F2AA77 /* DefaultFiles */ = {
+			isa = PBXGroup;
+			children = (
+				18C57C4027EB1A7800F2AA77 /* AppDelegate.swift */,
+				18C57C4227EB1A7800F2AA77 /* SceneDelegate.swift */,
+				18C57C4627EB1A7800F2AA77 /* Main.storyboard */,
+			);
+			path = DefaultFiles;
+			sourceTree = "<group>";
+		};
+		18C57C7D27EB1AF600F2AA77 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +344,9 @@
 			files = (
 				18C57C5027EB1A7B00F2AA77 /* LaunchScreen.storyboard in Resources */,
 				18C57C4D27EB1A7B00F2AA77 /* Assets.xcassets in Resources */,
+				18AA864727F435D50069610E /* CombineViewController.xib in Resources */,
+				18AA863B27F427E20069610E /* ListTableCell.xib in Resources */,
+				18C57C8927EB37B200F2AA77 /* EmployeeTableCell.xib in Resources */,
 				18C57C4827EB1A7800F2AA77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,9 +372,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1863ABA727EC233000575DEC /* ErrorMessages.swift in Sources */,
 				18C57C4527EB1A7800F2AA77 /* ViewController.swift in Sources */,
+				18AA863427F4270E0069610E /* UITableView+Extension.swift in Sources */,
+				18AA864027F431480069610E /* Array+Extension.swift in Sources */,
 				18C57C4B27EB1A7800F2AA77 /* InterviewPreparation.xcdatamodeld in Sources */,
+				18C57C8827EB37B200F2AA77 /* EmployeeTableCell.swift in Sources */,
+				18C57C8E27EB456500F2AA77 /* Employee.swift in Sources */,
+				18AA863A27F427E20069610E /* ListTableCell.swift in Sources */,
+				18C57C7F27EB1EB000F2AA77 /* FirstViewModal.swift in Sources */,
 				18C57C4127EB1A7800F2AA77 /* AppDelegate.swift in Sources */,
+				18AA864D27F4389B0069610E /* CombineViewModal.swift in Sources */,
+				18AA864627F435D50069610E /* CombineViewController.swift in Sources */,
 				18C57C4327EB1A7800F2AA77 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
