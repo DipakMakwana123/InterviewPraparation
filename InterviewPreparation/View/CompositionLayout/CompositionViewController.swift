@@ -21,25 +21,42 @@ class CompositionViewController: UIViewController {
     private func configureCollectionView(){
         guard let collectionView = collectionView else {return}
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.register(MyHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header")
         collectionView.collectionViewLayout = setLayout()
         collectionView.dataSource = self
         collectionView.delegate = self
     }
     private func setLayout() -> UICollectionViewCompositionalLayout{
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+        
+        let gap : CGFloat = 5
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1/3), heightDimension: .fractionalHeight(1.0))
         
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        item.contentInsets = NSDirectionalEdgeInsets(top: gap, leading: gap, bottom: gap, trailing: gap)
         
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(200))
         
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         
         let section = NSCollectionLayoutSection(group: group)
+        section.boundarySupplementaryItems = [makeHeader()]
+
         
         let layout = UICollectionViewCompositionalLayout(section: section)
         
         return layout
     }
+    func makeHeader() -> NSCollectionLayoutBoundarySupplementaryItem {
+            // 1
+            let size = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1),
+                                              heightDimension: .estimated(50))
+            // 2
+            let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: size,
+                                                                     elementKind: UICollectionView.elementKindSectionHeader,
+                                                                     alignment: .top)
+            return header
+        }
 
 
 }
@@ -55,9 +72,35 @@ extension CompositionViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = 
+        cell.backgroundColor = UIColor.random()
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                           viewForSupplementaryElementOfKind kind: String,
+                           at indexPath: IndexPath) -> UICollectionReusableView {
+           print("UICollectionViewDelegateFlowLayout")
+           switch kind {
+           
+           case UICollectionView.elementKindSectionHeader:
+               guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath) as? MyHeader else {return UICollectionReusableView() }
+           
+               headerView.backgroundColor = UIColor.blue
+       
+           headerView.titleLabel.text = "Header"
+               return headerView
+           
+           case UICollectionView.elementKindSectionFooter:
+               guard let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "footer", for: indexPath) as? MyHeader else {return UICollectionReusableView()}
+           
+               footerView.backgroundColor = UIColor.green
+               footerView.titleLabel.text = "Footer"
+               return footerView
+           
+           default:
+               assert(false, "Unexpected element kind")
+           }
+       }
     
     
 }
@@ -65,5 +108,41 @@ extension CompositionViewController: UICollectionViewDelegateFlowLayout {
     
 }
 
+extension UIColor {
+    static func random() -> UIColor {
+        let redValue = CGFloat(drand48())
+        let greenValue = CGFloat(drand48())
+        let blueValue = CGFloat(drand48())
+            
+        let randomColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: 1.0)
+            
+        return randomColor
+        }
+}
 
 
+
+class MyHeader: UICollectionReusableView {
+
+    let titleLabel = UILabel()
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.backgroundColor = UIColor.purple
+    
+        // Customize here
+        addSubview(titleLabel)
+        print("MyHeaderFooterClass")
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        titleLabel.sizeToFit()
+        titleLabel.frame.origin = CGPoint(x: 15, y: 10)
+    }
+}
