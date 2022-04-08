@@ -20,7 +20,7 @@ class CompositionViewController: UIViewController {
     }
     private func configureCollectionView(){
         guard let collectionView = collectionView else {return}
-        
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         collectionView.collectionViewLayout = setLayout()
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -30,7 +30,7 @@ class CompositionViewController: UIViewController {
         
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(200))
         
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         
@@ -45,13 +45,17 @@ class CompositionViewController: UIViewController {
 }
 
 extension CompositionViewController: UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 5
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 50
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = UIColor.red
+        cell.backgroundColor = 
         return cell
     }
     
