@@ -33,7 +33,18 @@ class APIManager {
 class FirstViewModal {
     
     private let apiManager: APIManager
-    let questionList: [String] = ["Compositional Layout","Combine","TV OS","Operation Queue","GCD","VIPER","SwiftUI","UIKit to SwiftUI"]
+    
+    let courseList:[Course] = [
+        Course(id: .combine, name: "Combine"),
+        Course(id: .compositionalLayout, name: "Compositional Layout"),
+        Course(id: .tvOS, name: "TV OS"),
+        Course(id: .operationQueue, name: "Operation Queue"),
+        Course(id: .gcd, name: "GCD"),
+        Course(id: .viper, name: "VIPER"),
+        Course(id: .swiftUI, name: "SwiftUI"),
+        Course(id: .uiKitSwiftUI, name: "UIKit to SwiftUI"),
+    ]
+  //  let questionList: [String] = ["Compositional Layout","Combine","TV OS","Operation Queue","GCD","VIPER","SwiftUI","UIKit to SwiftUI"]
 
     
     init(apiManager:APIManager) {
@@ -58,12 +69,29 @@ class FirstViewModal {
             }
         })
     }
-    
+}
+
+
+struct Course {
+    let id: QuestionType
+    let name: String
     
 }
 
+enum QuestionType: Int {
+    case compositionalLayout
+    case combine
+    case tvOS
+    case operationQueue
+    case gcd
+    case viper
+    case swiftUI
+    case uiKitSwiftUI
+}
+
+
+
 struct BaseURL{
-    
     static let url: String = "http://dummy.restapiexample.com"
 }
 

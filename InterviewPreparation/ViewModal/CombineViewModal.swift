@@ -17,9 +17,7 @@ class CombineViewModal {
     init(apiManager:APIManager) {
         self.apiManager = apiManager
     }
-
     var cancellables = Set<AnyCancellable>()
-
     func getUsers() -> AnyPublisher<Employee,Never>?{
         
         guard let url = URL(string:"\(BaseURL.url)\(EndPoint.employees)") else {return nil}

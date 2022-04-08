@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+//import SDWebImage
 
 class CombineViewController: UIViewController {
 
@@ -17,8 +18,10 @@ class CombineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         getEmployeesByCombine()
-        
     }
     
     private func configureViews(){
@@ -39,19 +42,19 @@ class CombineViewController: UIViewController {
         
         guard let result = viewModal.getUsers() else {return }
         result.sink { [weak self] items in
-            self?.viewModal.employees = items
+           
             debugPrint(items)
-            self?.reloadData()
-//            DispatchQueue.main.async {
-//                if items.isEmpty {
-//                    self?.tableView?.setEmptyMessage(ErrorMessages.noData)
-//                }
-//                else {
-//                    self?.viewModal.users = items
-//                    self?.tableView?.restore()
-//                    self?.reloadData()
-//                }
-            //}
+            //self?.reloadData()
+            DispatchQueue.main.async {
+                if let data = items.data , data.isEmpty {
+                    self?.tableView?.setEmptyMessage(ErrorMessages.noData)
+                }
+                else {
+                    self?.viewModal.employees = items
+                    self?.tableView?.restore()
+                    self?.reloadData()
+                }
+            }
         }
         .store(in: &viewModal.cancellables)
     }
@@ -64,13 +67,12 @@ extension CombineViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard  let cell = tableView.dequeueReusableCell(withIdentifier: ListTableCell.identifier, for: indexPath) as? ListTableCell,let obj = viewModal.employees.data?[safe:indexPath.row]  else {return UITableViewCell()}
-        cell.textLabel?.text = obj.name
-        
+        cell.textLabel?.text = "\(obj.name)'s salary is: \(obj.salary)"
         return cell
     }
-    
-    
 }
+
+
 extension CombineViewController: UITableViewDelegate{
     
 }

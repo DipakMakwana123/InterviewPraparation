@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 // MARK: - Welcome
 struct Employee: Codable {
     let status: String?

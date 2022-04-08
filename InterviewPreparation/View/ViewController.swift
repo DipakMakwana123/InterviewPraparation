@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
-       // apiOperations()
+        // apiOperations()
     }
     
     private func configureViews(){
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         table.configure(dataSource: self,delegate: self)
         table.registerCell(identifiers: [ListTableCell.identifier])
     }
-   
+    
 }
 // API Operation
 extension ViewController {
@@ -47,12 +47,12 @@ extension ViewController {
             case.failure(let err):
                 debugPrint(err)
                 // handle Error
-            break
+                break
             }
         })
     }
     
-  
+    
     
     private func getData(){
         
@@ -62,12 +62,12 @@ extension ViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModal.questionList.count 
+        viewModal.courseList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard  let cell = tableView.dequeueReusableCell(withIdentifier: ListTableCell.identifier, for: indexPath) as? ListTableCell,let obj = viewModal.questionList[safe:indexPath.row] else {return UITableViewCell()}
-        cell.textLabel?.text = obj
+        guard  let cell = tableView.dequeueReusableCell(withIdentifier: ListTableCell.identifier, for: indexPath) as? ListTableCell,let obj = viewModal.courseList[safe:indexPath.row] else {return UITableViewCell()}
+        cell.textLabel?.text = obj.name
         
         return cell
     }
@@ -75,11 +75,17 @@ extension ViewController: UITableViewDataSource {
     
 }
 extension ViewController: UITableViewDelegate{
- 
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let viewController = CombineViewController(nibName: "CombineViewController",bundle:nil)
-        self.navigationController?.pushViewController(viewController, animated: true)
-        //self.navigationController.push(viewController,animated:true
+        guard let obj = viewModal.courseList[safe:indexPath.row] else {return}
+        
+        if obj.id == .combine {
+            let viewController = CombineViewController(nibName: "CombineViewController",bundle:nil)
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }else if obj.id == .compositionalLayout {
+            let viewController = CompositionViewController(nibName: "CompositionViewController",bundle:nil)
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
     }
 }

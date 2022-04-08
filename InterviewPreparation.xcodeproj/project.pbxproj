@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1863ABA727EC233000575DEC /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863ABA627EC233000575DEC /* ErrorMessages.swift */; };
+		18847E8F27F6B7A000B7D7C4 /* CompositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18847E8D27F6B7A000B7D7C4 /* CompositionViewController.swift */; };
+		18847E9027F6B7A000B7D7C4 /* CompositionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18847E8E27F6B7A000B7D7C4 /* CompositionViewController.xib */; };
+		18847E9527F6B85300B7D7C4 /* CompositonViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18847E9427F6B85300B7D7C4 /* CompositonViewModal.swift */; };
+		18847E9A27F6B8F000B7D7C4 /* CollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18847E9927F6B8F000B7D7C4 /* CollectionView+Extension.swift */; };
 		18AA863427F4270E0069610E /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA863327F4270E0069610E /* UITableView+Extension.swift */; };
 		18AA863A27F427E20069610E /* ListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA863827F427E20069610E /* ListTableCell.swift */; };
 		18AA863B27F427E20069610E /* ListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AA863927F427E20069610E /* ListTableCell.xib */; };
@@ -15,6 +19,7 @@
 		18AA864627F435D50069610E /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA864427F435D50069610E /* CombineViewController.swift */; };
 		18AA864727F435D50069610E /* CombineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AA864527F435D50069610E /* CombineViewController.xib */; };
 		18AA864D27F4389B0069610E /* CombineViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA864C27F4389B0069610E /* CombineViewModal.swift */; };
+		18AA865627F47A0D0069610E /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA865527F47A0D0069610E /* UIImageView+Extension.swift */; };
 		18C57C4127EB1A7800F2AA77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C57C4027EB1A7800F2AA77 /* AppDelegate.swift */; };
 		18C57C4327EB1A7800F2AA77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C57C4227EB1A7800F2AA77 /* SceneDelegate.swift */; };
 		18C57C4527EB1A7800F2AA77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C57C4427EB1A7800F2AA77 /* ViewController.swift */; };
@@ -49,6 +54,10 @@
 
 /* Begin PBXFileReference section */
 		1863ABA627EC233000575DEC /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
+		18847E8D27F6B7A000B7D7C4 /* CompositionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionViewController.swift; sourceTree = "<group>"; };
+		18847E8E27F6B7A000B7D7C4 /* CompositionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompositionViewController.xib; sourceTree = "<group>"; };
+		18847E9427F6B85300B7D7C4 /* CompositonViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositonViewModal.swift; sourceTree = "<group>"; };
+		18847E9927F6B8F000B7D7C4 /* CollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+Extension.swift"; sourceTree = "<group>"; };
 		18AA863327F4270E0069610E /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		18AA863827F427E20069610E /* ListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableCell.swift; sourceTree = "<group>"; };
 		18AA863927F427E20069610E /* ListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableCell.xib; sourceTree = "<group>"; };
@@ -56,6 +65,7 @@
 		18AA864427F435D50069610E /* CombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
 		18AA864527F435D50069610E /* CombineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CombineViewController.xib; sourceTree = "<group>"; };
 		18AA864C27F4389B0069610E /* CombineViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewModal.swift; sourceTree = "<group>"; };
+		18AA865527F47A0D0069610E /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		18C57C3D27EB1A7800F2AA77 /* InterviewPreparation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewPreparation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C57C4027EB1A7800F2AA77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C57C4227EB1A7800F2AA77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18847E8C27F6B78000B7D7C4 /* CompositionLayout */ = {
+			isa = PBXGroup;
+			children = (
+				18847E8D27F6B7A000B7D7C4 /* CompositionViewController.swift */,
+				18847E8E27F6B7A000B7D7C4 /* CompositionViewController.xib */,
+			);
+			path = CompositionLayout;
+			sourceTree = "<group>";
+		};
 		18AA864B27F436010069610E /* Combine */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +190,7 @@
 		18C57C7627EB1A9000F2AA77 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18847E8C27F6B78000B7D7C4 /* CompositionLayout */,
 				18AA864B27F436010069610E /* Combine */,
 				18C57C4427EB1A7800F2AA77 /* ViewController.swift */,
 				18C57C8627EB37B200F2AA77 /* EmployeeTableCell.swift */,
@@ -186,6 +206,7 @@
 			children = (
 				18C57C7E27EB1EB000F2AA77 /* FirstViewModal.swift */,
 				18AA864C27F4389B0069610E /* CombineViewModal.swift */,
+				18847E9427F6B85300B7D7C4 /* CompositonViewModal.swift */,
 			);
 			path = ViewModal;
 			sourceTree = "<group>";
@@ -209,8 +230,10 @@
 		18C57C7A27EB1ABE00F2AA77 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				18AA865527F47A0D0069610E /* UIImageView+Extension.swift */,
 				18AA863F27F431480069610E /* Array+Extension.swift */,
 				18AA863327F4270E0069610E /* UITableView+Extension.swift */,
+				18847E9927F6B8F000B7D7C4 /* CollectionView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -326,6 +349,9 @@
 				Base,
 			);
 			mainGroup = 18C57C3427EB1A7800F2AA77;
+			packageReferences = (
+				18AA865127F479E40069610E /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 18C57C3E27EB1A7800F2AA77 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -348,6 +374,7 @@
 				18AA863B27F427E20069610E /* ListTableCell.xib in Resources */,
 				18C57C8927EB37B200F2AA77 /* EmployeeTableCell.xib in Resources */,
 				18C57C4827EB1A7800F2AA77 /* Main.storyboard in Resources */,
+				18847E9027F6B7A000B7D7C4 /* CompositionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,15 +401,19 @@
 			files = (
 				1863ABA727EC233000575DEC /* ErrorMessages.swift in Sources */,
 				18C57C4527EB1A7800F2AA77 /* ViewController.swift in Sources */,
+				18847E9A27F6B8F000B7D7C4 /* CollectionView+Extension.swift in Sources */,
+				18AA865627F47A0D0069610E /* UIImageView+Extension.swift in Sources */,
 				18AA863427F4270E0069610E /* UITableView+Extension.swift in Sources */,
 				18AA864027F431480069610E /* Array+Extension.swift in Sources */,
 				18C57C4B27EB1A7800F2AA77 /* InterviewPreparation.xcdatamodeld in Sources */,
 				18C57C8827EB37B200F2AA77 /* EmployeeTableCell.swift in Sources */,
+				18847E9527F6B85300B7D7C4 /* CompositonViewModal.swift in Sources */,
 				18C57C8E27EB456500F2AA77 /* Employee.swift in Sources */,
 				18AA863A27F427E20069610E /* ListTableCell.swift in Sources */,
 				18C57C7F27EB1EB000F2AA77 /* FirstViewModal.swift in Sources */,
 				18C57C4127EB1A7800F2AA77 /* AppDelegate.swift in Sources */,
 				18AA864D27F4389B0069610E /* CombineViewModal.swift in Sources */,
+				18847E8F27F6B7A000B7D7C4 /* CompositionViewController.swift in Sources */,
 				18AA864627F435D50069610E /* CombineViewController.swift in Sources */,
 				18C57C4327EB1A7800F2AA77 /* SceneDelegate.swift in Sources */,
 			);
@@ -711,6 +742,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18AA865127F479E40069610E /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCVersionGroup section */
 		18C57C4927EB1A7800F2AA77 /* InterviewPreparation.xcdatamodeld */ = {
