@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine 
+import SwiftUI
 
 class ViewController: UIViewController {
     
@@ -85,6 +86,11 @@ extension ViewController: UITableViewDelegate{
             self.navigationController?.pushViewController(viewController, animated: true)
         }else if obj.id == .compositionalLayout {
             let viewController = CompositionViewController(nibName: "CompositionViewController",bundle:nil)
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+        else if obj.id == .tableViewCollectionView {
+            let viewController = UIHostingController(rootView: TableCollectionView())
+            self.navigationController?.navigationBar.isHidden = true 
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }

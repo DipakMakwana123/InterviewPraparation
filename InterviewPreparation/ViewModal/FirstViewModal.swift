@@ -14,22 +14,7 @@ enum CustomError: Error {
     case parserError
     case unknown
 }
-class APIManager {
-    
-    
-    func getAPICall(url: URL, compilation: @escaping (Result<Data?,CustomError>) -> ()){
-        URLSession.shared.dataTask(with: url, completionHandler:{ (data,response,err) in
-            // here we have check for status code also
-            if let _ = err, data == nil {
-                
-                compilation(.failure(.badURL))
-            }else {
-                compilation(.success(data))
-            }
-        })
-        .resume()
-    }
-}
+
 class FirstViewModal {
     
     private let apiManager: APIManager
@@ -37,6 +22,7 @@ class FirstViewModal {
     let courseList:[Course] = [
         Course(id: .combine, name: "Combine"),
         Course(id: .compositionalLayout, name: "Compositional Layout"),
+        Course(id: .tableViewCollectionView, name: "TableView + CollectionView"),
         Course(id: .tvOS, name: "TV OS"),
         Course(id: .operationQueue, name: "Operation Queue"),
         Course(id: .gcd, name: "GCD"),
@@ -81,6 +67,7 @@ struct Course {
 enum QuestionType: Int {
     case compositionalLayout
     case combine
+    case tableViewCollectionView
     case tvOS
     case operationQueue
     case gcd

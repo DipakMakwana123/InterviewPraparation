@@ -33,6 +33,24 @@
 		18C57C8827EB37B200F2AA77 /* EmployeeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C57C8627EB37B200F2AA77 /* EmployeeTableCell.swift */; };
 		18C57C8927EB37B200F2AA77 /* EmployeeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C57C8727EB37B200F2AA77 /* EmployeeTableCell.xib */; };
 		18C57C8E27EB456500F2AA77 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C57C8D27EB456500F2AA77 /* Employee.swift */; };
+		7ABC85C22803F0EB00E329B7 /* Table+CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85C02803F0EB00E329B7 /* Table+CollectionViewController.swift */; };
+		7ABC85C32803F0EB00E329B7 /* Table+CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC85C12803F0EB00E329B7 /* Table+CollectionViewController.xib */; };
+		7ABC85C52803F3E200E329B7 /* TableCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85C42803F3E200E329B7 /* TableCollectionView.swift */; };
+		7ABC85C828045AA500E329B7 /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85C728045AA500E329B7 /* CustomText.swift */; };
+		7ABC85CA28045AC700E329B7 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85C928045AC700E329B7 /* NavigationBar.swift */; };
+		7ABC85CC2804641C00E329B7 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85CB2804641C00E329B7 /* SearchBar.swift */; };
+		7ABC85CE2804645E00E329B7 /* HorizontalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85CD2804645E00E329B7 /* HorizontalCell.swift */; };
+		7ABC85D0280464A300E329B7 /* ModalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85CF280464A300E329B7 /* ModalData.swift */; };
+		7ABC85D2280464D300E329B7 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85D1280464D300E329B7 /* AsyncImageView.swift */; };
+		7ABC85D42804652600E329B7 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85D32804652600E329B7 /* HomeListView.swift */; };
+		7ABC85D62804658C00E329B7 /* HomeViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85D52804658C00E329B7 /* HomeViewModal.swift */; };
+		7ABC85D8280465AF00E329B7 /* Contents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85D7280465AF00E329B7 /* Contents.swift */; };
+		7ABC85DA2804663D00E329B7 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85D92804663D00E329B7 /* APIManager.swift */; };
+		7ABC85DC2804664F00E329B7 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85DB2804664F00E329B7 /* APIConfiguration.swift */; };
+		7ABC85DF280466BA00E329B7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABC85DE280466BA00E329B7 /* Alamofire */; };
+		7ABC85E12804674500E329B7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85E02804674500E329B7 /* NetworkManager.swift */; };
+		7ABC85E52804686000E329B7 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85E42804686000E329B7 /* APIConstant.swift */; };
+		7ABC85E828058F4200E329B7 /* SwiftUIViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85E728058F4200E329B7 /* SwiftUIViewModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +103,23 @@
 		18C57C8627EB37B200F2AA77 /* EmployeeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableCell.swift; sourceTree = "<group>"; };
 		18C57C8727EB37B200F2AA77 /* EmployeeTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableCell.xib; sourceTree = "<group>"; };
 		18C57C8D27EB456500F2AA77 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		7ABC85C02803F0EB00E329B7 /* Table+CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Table+CollectionViewController.swift"; sourceTree = "<group>"; };
+		7ABC85C12803F0EB00E329B7 /* Table+CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Table+CollectionViewController.xib"; sourceTree = "<group>"; };
+		7ABC85C42803F3E200E329B7 /* TableCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCollectionView.swift; sourceTree = "<group>"; };
+		7ABC85C728045AA500E329B7 /* CustomText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomText.swift; path = "../../../../../Downloads/SwiftUIDemo-main/Pargo_SwiftUI/Views/CustomView/CustomText.swift"; sourceTree = "<group>"; };
+		7ABC85C928045AC700E329B7 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		7ABC85CB2804641C00E329B7 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		7ABC85CD2804645E00E329B7 /* HorizontalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCell.swift; sourceTree = "<group>"; };
+		7ABC85CF280464A300E329B7 /* ModalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalData.swift; sourceTree = "<group>"; };
+		7ABC85D1280464D300E329B7 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		7ABC85D32804652600E329B7 /* HomeListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
+		7ABC85D52804658C00E329B7 /* HomeViewModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModal.swift; sourceTree = "<group>"; };
+		7ABC85D7280465AF00E329B7 /* Contents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contents.swift; sourceTree = "<group>"; };
+		7ABC85D92804663D00E329B7 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		7ABC85DB2804664F00E329B7 /* APIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		7ABC85E02804674500E329B7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7ABC85E42804686000E329B7 /* APIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
+		7ABC85E728058F4200E329B7 /* SwiftUIViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ABC85DF280466BA00E329B7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,9 +189,7 @@
 		18C57C3F27EB1A7800F2AA77 /* InterviewPreparation */ = {
 			isa = PBXGroup;
 			children = (
-				18C57C7D27EB1AF600F2AA77 /* Resource */,
 				18C57C7C27EB1AD800F2AA77 /* DefaultFiles */,
-				18C57C7B27EB1AC600F2AA77 /* Managers */,
 				18C57C7A27EB1ABE00F2AA77 /* Extension */,
 				18C57C7927EB1AA900F2AA77 /* Utility */,
 				18C57C7827EB1AA300F2AA77 /* Modal */,
@@ -190,6 +224,8 @@
 		18C57C7627EB1A9000F2AA77 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7ABC85C62804275100E329B7 /* SwiftUI */,
+				7ABC85BF2803F0BB00E329B7 /* TableView + CollectionView */,
 				18847E8C27F6B78000B7D7C4 /* CompositionLayout */,
 				18AA864B27F436010069610E /* Combine */,
 				18C57C4427EB1A7800F2AA77 /* ViewController.swift */,
@@ -204,9 +240,11 @@
 		18C57C7727EB1A9600F2AA77 /* ViewModal */ = {
 			isa = PBXGroup;
 			children = (
+				7ABC85D52804658C00E329B7 /* HomeViewModal.swift */,
 				18C57C7E27EB1EB000F2AA77 /* FirstViewModal.swift */,
 				18AA864C27F4389B0069610E /* CombineViewModal.swift */,
 				18847E9427F6B85300B7D7C4 /* CompositonViewModal.swift */,
+				7ABC85E728058F4200E329B7 /* SwiftUIViewModal.swift */,
 			);
 			path = ViewModal;
 			sourceTree = "<group>";
@@ -238,13 +276,6 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		18C57C7B27EB1AC600F2AA77 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
 		18C57C7C27EB1AD800F2AA77 /* DefaultFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,11 +286,41 @@
 			path = DefaultFiles;
 			sourceTree = "<group>";
 		};
-		18C57C7D27EB1AF600F2AA77 /* Resource */ = {
+		7ABC85BF2803F0BB00E329B7 /* TableView + CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				7ABC85C02803F0EB00E329B7 /* Table+CollectionViewController.swift */,
+				7ABC85C12803F0EB00E329B7 /* Table+CollectionViewController.xib */,
 			);
-			path = Resource;
+			path = "TableView + CollectionView";
+			sourceTree = "<group>";
+		};
+		7ABC85C62804275100E329B7 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				7ABC85E628058E6900E329B7 /* UnUsed */,
+				7ABC85D92804663D00E329B7 /* APIManager.swift */,
+				7ABC85D32804652600E329B7 /* HomeListView.swift */,
+				7ABC85CF280464A300E329B7 /* ModalData.swift */,
+				7ABC85CD2804645E00E329B7 /* HorizontalCell.swift */,
+				7ABC85CB2804641C00E329B7 /* SearchBar.swift */,
+				7ABC85C928045AC700E329B7 /* NavigationBar.swift */,
+				7ABC85C728045AA500E329B7 /* CustomText.swift */,
+				7ABC85C42803F3E200E329B7 /* TableCollectionView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		7ABC85E628058E6900E329B7 /* UnUsed */ = {
+			isa = PBXGroup;
+			children = (
+				7ABC85E02804674500E329B7 /* NetworkManager.swift */,
+				7ABC85E42804686000E329B7 /* APIConstant.swift */,
+				7ABC85DB2804664F00E329B7 /* APIConfiguration.swift */,
+				7ABC85D1280464D300E329B7 /* AsyncImageView.swift */,
+				7ABC85D7280465AF00E329B7 /* Contents.swift */,
+			);
+			path = UnUsed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +339,9 @@
 			dependencies = (
 			);
 			name = InterviewPreparation;
+			packageProductDependencies = (
+				7ABC85DE280466BA00E329B7 /* Alamofire */,
+			);
 			productName = InterviewPreparation;
 			productReference = 18C57C3D27EB1A7800F2AA77 /* InterviewPreparation.app */;
 			productType = "com.apple.product-type.application";
@@ -351,6 +415,7 @@
 			mainGroup = 18C57C3427EB1A7800F2AA77;
 			packageReferences = (
 				18AA865127F479E40069610E /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				7ABC85DD280466BA00E329B7 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 18C57C3E27EB1A7800F2AA77 /* Products */;
 			projectDirPath = "";
@@ -373,6 +438,7 @@
 				18AA864727F435D50069610E /* CombineViewController.xib in Resources */,
 				18AA863B27F427E20069610E /* ListTableCell.xib in Resources */,
 				18C57C8927EB37B200F2AA77 /* EmployeeTableCell.xib in Resources */,
+				7ABC85C32803F0EB00E329B7 /* Table+CollectionViewController.xib in Resources */,
 				18C57C4827EB1A7800F2AA77 /* Main.storyboard in Resources */,
 				18847E9027F6B7A000B7D7C4 /* CompositionViewController.xib in Resources */,
 			);
@@ -400,22 +466,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				1863ABA727EC233000575DEC /* ErrorMessages.swift in Sources */,
+				7ABC85CE2804645E00E329B7 /* HorizontalCell.swift in Sources */,
+				7ABC85C22803F0EB00E329B7 /* Table+CollectionViewController.swift in Sources */,
 				18C57C4527EB1A7800F2AA77 /* ViewController.swift in Sources */,
 				18847E9A27F6B8F000B7D7C4 /* CollectionView+Extension.swift in Sources */,
+				7ABC85DA2804663D00E329B7 /* APIManager.swift in Sources */,
+				7ABC85C52803F3E200E329B7 /* TableCollectionView.swift in Sources */,
+				7ABC85DC2804664F00E329B7 /* APIConfiguration.swift in Sources */,
 				18AA865627F47A0D0069610E /* UIImageView+Extension.swift in Sources */,
 				18AA863427F4270E0069610E /* UITableView+Extension.swift in Sources */,
 				18AA864027F431480069610E /* Array+Extension.swift in Sources */,
 				18C57C4B27EB1A7800F2AA77 /* InterviewPreparation.xcdatamodeld in Sources */,
+				7ABC85E828058F4200E329B7 /* SwiftUIViewModal.swift in Sources */,
+				7ABC85CC2804641C00E329B7 /* SearchBar.swift in Sources */,
 				18C57C8827EB37B200F2AA77 /* EmployeeTableCell.swift in Sources */,
 				18847E9527F6B85300B7D7C4 /* CompositonViewModal.swift in Sources */,
+				7ABC85D42804652600E329B7 /* HomeListView.swift in Sources */,
+				7ABC85CA28045AC700E329B7 /* NavigationBar.swift in Sources */,
 				18C57C8E27EB456500F2AA77 /* Employee.swift in Sources */,
+				7ABC85E12804674500E329B7 /* NetworkManager.swift in Sources */,
 				18AA863A27F427E20069610E /* ListTableCell.swift in Sources */,
 				18C57C7F27EB1EB000F2AA77 /* FirstViewModal.swift in Sources */,
+				7ABC85D0280464A300E329B7 /* ModalData.swift in Sources */,
+				7ABC85D2280464D300E329B7 /* AsyncImageView.swift in Sources */,
+				7ABC85D62804658C00E329B7 /* HomeViewModal.swift in Sources */,
 				18C57C4127EB1A7800F2AA77 /* AppDelegate.swift in Sources */,
+				7ABC85E52804686000E329B7 /* APIConstant.swift in Sources */,
 				18AA864D27F4389B0069610E /* CombineViewModal.swift in Sources */,
+				7ABC85D8280465AF00E329B7 /* Contents.swift in Sources */,
 				18847E8F27F6B7A000B7D7C4 /* CompositionViewController.swift in Sources */,
 				18AA864627F435D50069610E /* CombineViewController.swift in Sources */,
 				18C57C4327EB1A7800F2AA77 /* SceneDelegate.swift in Sources */,
+				7ABC85C828045AA500E329B7 /* CustomText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,7 +834,23 @@
 				minimumVersion = 5.12.5;
 			};
 		};
+		7ABC85DD280466BA00E329B7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7ABC85DE280466BA00E329B7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7ABC85DD280466BA00E329B7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		18C57C4927EB1A7800F2AA77 /* InterviewPreparation.xcdatamodeld */ = {

@@ -85,7 +85,7 @@ extension CompositionViewController: UICollectionViewDataSource {
            case UICollectionView.elementKindSectionHeader:
                guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath) as? MyHeader else {return UICollectionReusableView() }
            
-               headerView.backgroundColor = UIColor.blue
+               headerView.backgroundColor = UIColor.lightGray
        
            headerView.titleLabel.text = "Header"
                return headerView
