@@ -11,31 +11,32 @@ struct HorizontalCell: View {
     var memes : [Meme]
     @State var viewFrame: CGSize = .zero
     
+    let cellHeight: CGFloat = 250
+    let cellWidth: CGFloat = UIScreen.main.bounds.width / 2.5
+    
     var body: some View {
        
         
         ScrollView(.horizontal, content: {
-            
-            HStack(spacing: 15) {
-//                GeometryReader { (geometry) in
-//                                self.makeView(geometry)
-//                    }
-            ForEach(memes, id: \.self) { meme in
-                NavigationLink {
-                  //  DetailView(meme: meme)
-                } label: {
-                    VStack {
-                        Text(meme.name ?? "")
-                        Spacer()
-                        AsyncImageView(urlString:meme.url)
+            HStack {
+                ForEach(memes, id: \.self) { meme in
+                    NavigationLink {
+                      //  DetailView(meme: meme)
+                    } label: {
+                        VStack {
+                            // Design the View
+                        }
+                        .frame(width: cellWidth, height: cellHeight)
+                        .border(.white)
+                        .background(Color.black.opacity(0.5))
+                        .padding()
                     }
-                }
-             }
-            }
-            
-        }).frame(width:414, height: 200, alignment: .center)
+                 }
+            }.background(Color.red)
             
             
+        }).frame(width:UIScreen.main.bounds.width, height: cellHeight, alignment: .center)
+        .background(Color.clear)
     }
     
     func makeView(_ geometry: GeometryProxy) -> some View {

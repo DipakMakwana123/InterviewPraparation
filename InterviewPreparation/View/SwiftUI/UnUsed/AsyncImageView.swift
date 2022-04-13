@@ -13,14 +13,14 @@ struct AsyncImageView: View {
         if #available(iOS 15.0, *) {
             AsyncImage(url: URL(string: urlString),
                        content: { image in
-                // image.background(.red)
                 image.resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .frame(width: 200, height: 200,alignment:.center)
+                    //.frame(maxWidth: .infinity, maxHeight: .infinity)
             },
                        placeholder: {
                 ProgressView()
-            }).background(.red)
+            }).background(.gray)
         } else {
             // Fallback on earlier versions
         }

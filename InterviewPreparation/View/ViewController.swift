@@ -88,7 +88,7 @@ extension ViewController: UITableViewDelegate{
             let viewController = CompositionViewController(nibName: "CompositionViewController",bundle:nil)
             self.navigationController?.pushViewController(viewController, animated: true)
         }
-        else if obj.id == .tableViewCollectionView {
+        else if obj.id == .tableViewCollectionView || obj.id == .uiKitSwiftUI  {
             let viewController = UIHostingController(rootView: TableCollectionView())
             self.navigationController?.navigationBar.isHidden = true 
             self.navigationController?.pushViewController(viewController, animated: true)

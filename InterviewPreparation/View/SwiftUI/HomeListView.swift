@@ -62,7 +62,7 @@ struct HomeListView : View {
             HStack {
                 CustomText(name:"123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890")
                 Spacer()
-            }
+            }.background(Color.red)
             
 //            AsyncImage(url: URL(string: memes.url),
 //                            content: { image in

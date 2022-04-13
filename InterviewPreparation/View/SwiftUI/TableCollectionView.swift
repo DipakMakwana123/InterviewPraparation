@@ -8,52 +8,68 @@
 import SwiftUI
 
 struct TableCollectionView: View {
-    let gap: CGFloat = 12
+    let accentColor: Color = .black
     @State var memes = [Meme]()
     @ObservedObject private  var searchModal =  SearchModal()
     private let viewModal: SwiftUIViewModal = SwiftUIViewModal(apiManager: APIManager())
     
     var body: some View {
         
+       // VStack {
         
-        NavigationView {
-            //  setup()
+            NavigationView {
+                Color.black.opacity(1).ignoresSafeArea()
+                .navigationBarItems(
+                    
+                leading:
+                    Button(action: {
+                        print("SF Symbol button pressed...")
+                }) {
+                        Text("Ds TV")
+                        .accentColor(accentColor)
+                },
+                trailing:
+                                        
+                        HStack {
+                            Button(action: {
+                                print("Search Button Pressed")
+                            }) {
+                                Image(systemName: "antenna.radiowaves.left.and.right.circle")
+                                
+                            }.accentColor(accentColor)
+                            Button(action: {
+                                print("Search Button Pressed")
+                            }) {
+                                Image(systemName: "magnifyingglass")
+                                
+                            }.accentColor(accentColor)
+                })
+            }
+           
+            .frame(height: 50)
             VStack {
-                SearchBar()
-                Spacer()
                 List {
-                    Section(header: Text("Horizontal Rows")) {
-                        HorizontalCell(memes: self.memes)
-                    }
-                    Section(header: Text("Verticle Rows")) {
-                        ForEach(memes, id: \.self) { meme in
-                            NavigationLink {
-                               // DetailView(meme: meme)
-                                //LandmarkDetail(landmark: landmark)
-                            } label: {
-                                HomeListView(memes: meme)
-                            }
+
+                    ForEach((1...10), id: \.self) {
+                        Section(header: Text("Section \($0)")) {
+                            HorizontalCell(memes: self.memes)
                         }
                     }
                 }
-                .navigationBarTitle(Text("Home"), displayMode: .automatic)
-                .toolbar {
-//                    NavigationLink(destination: CollectionView()) {
-//                        Text("Help")
-//                    }
+                .background(Color.orange)
+            }
+       // }
+       
                     
-                }
-            }
-            .onAppear(){
-                // API Call
-                viewModal.getMemesData(compilation: {memes in
-                    debugPrint(memes)
-                    self.memes = memes
-                })
-                
-            }
-        }
-        .environmentObject(searchModal)
+                    .onAppear(){
+                        // API Call
+                        viewModal.getMemesData(compilation: {memes in
+                            debugPrint(memes)
+                            self.memes = memes
+                        })
+                    }
+                    .environmentObject(searchModal)
+
     }
 }
 struct MyNavigationView: View {
@@ -71,9 +87,9 @@ struct MyNavigationView: View {
                     Text("Ds TV")
                         .accentColor(.white)
                 },
-                trailing:
-                    
-                    HStack {
+                                    trailing:
+                                        
+                                        HStack {
                     
                     Button(action: {
                         print("Search Button Pressed")
