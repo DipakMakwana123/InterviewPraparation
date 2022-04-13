@@ -15,11 +15,9 @@ struct SettingViewModal{
         Setting(title: "TV Guide", image: "tv"),
         Setting(title: "My List", image: "list.triangle"),
         Setting(title: "showmax", image: "airpods.gen3"),
-        Setting(title: "My DsTV", image: "person"),
-        Setting(title:  "Setting", image: "gear"),
-        
+        Setting(title: "MyDStv", image: "person"),
+        Setting(title: "Setting", image: "gear"),
     ]
-    
 }
 
 struct Setting: Identifiable{
