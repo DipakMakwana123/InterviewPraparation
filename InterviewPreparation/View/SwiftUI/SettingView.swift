@@ -10,23 +10,31 @@ import SwiftUI
 struct SettingView: View {
     private let viewModal: SettingViewModal = SettingViewModal()
     var body: some View {
-        ZStack {
-            Color.black.opacity(0.9).ignoresSafeArea()
-            Form {
-                VStack {
-                   
-                    ForEach(viewModal.lists, id: \.id) { result in
-                        HStack {
-                            Image(systemName: result.image)
-                                .padding()
-                            Text(result.title)
-                            Spacer()
+     
+            NavigationView {
+                Form {
+                    VStack {
+                       
+                        ForEach(viewModal.lists, id: \.id) { result in
+                            HStack {
+                                Image(systemName: result.image)
+                                    
+                                    .accentColor(.white)
+                                    .padding()
+                                Text(result.title)
+                                
+                                Spacer()
+                            }
+                            Divider()
                         }
                     }
+                    
                 }
+                .navigationTitle("More")
+                .navigationBarTitleDisplayMode(.inline)
             }
         }
-    }
+  
 }
 
 struct SettingView_Previews: PreviewProvider {
