@@ -19,33 +19,34 @@ struct TableCollectionView: View {
         
             NavigationView {
                 Color.black.opacity(1).ignoresSafeArea()
+                    
                 .navigationBarItems(
                     
                 leading:
                     Button(action: {
                         print("SF Symbol button pressed...")
                 }) {
-                        Text("Ds TV")
+                    Image(systemName: "antenna.radiowaves.left.and.right.circle")
                         .accentColor(accentColor)
                 },
                 trailing:
                                         
                         HStack {
-                            Button(action: {
-                                print("Search Button Pressed")
-                            }) {
-                                Image(systemName: "antenna.radiowaves.left.and.right.circle")
-                                
-                            }.accentColor(accentColor)
+                            
                             Button(action: {
                                 print("Search Button Pressed")
                             }) {
                                 Image(systemName: "magnifyingglass")
                                 
                             }.accentColor(accentColor)
+                            Button(action: {
+                                print("Search Button Pressed")
+                            }) {
+                                Image(systemName: "gear")
+                                
+                            }.accentColor(accentColor)
                 })
             }
-           
             .frame(height: 50)
             VStack {
                 List {
@@ -58,17 +59,14 @@ struct TableCollectionView: View {
                 }
                 .background(Color.orange)
             }
-       // }
-       
-                    
-                    .onAppear(){
-                        // API Call
-                        viewModal.getMemesData(compilation: {memes in
-                            debugPrint(memes)
-                            self.memes = memes
-                        })
-                    }
-                    .environmentObject(searchModal)
+            .onAppear(){
+                    // API Call
+                    viewModal.getMemesData(compilation: {memes in
+                        debugPrint(memes)
+                        self.memes = memes
+                    })
+            }
+            .environmentObject(searchModal)
 
     }
 }

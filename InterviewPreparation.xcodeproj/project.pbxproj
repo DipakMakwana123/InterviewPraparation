@@ -51,6 +51,8 @@
 		7ABC85E12804674500E329B7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85E02804674500E329B7 /* NetworkManager.swift */; };
 		7ABC85E52804686000E329B7 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85E42804686000E329B7 /* APIConstant.swift */; };
 		7ABC85E828058F4200E329B7 /* SwiftUIViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85E728058F4200E329B7 /* SwiftUIViewModal.swift */; };
+		7ABC85EC2806D31500E329B7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85EB2806D31500E329B7 /* SettingView.swift */; };
+		7ABC85EE2806D43700E329B7 /* SettingViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85ED2806D43700E329B7 /* SettingViewModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +122,8 @@
 		7ABC85E02804674500E329B7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		7ABC85E42804686000E329B7 /* APIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
 		7ABC85E728058F4200E329B7 /* SwiftUIViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewModal.swift; sourceTree = "<group>"; };
+		7ABC85EB2806D31500E329B7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		7ABC85ED2806D43700E329B7 /* SettingViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,13 +304,12 @@
 			children = (
 				7ABC85E628058E6900E329B7 /* UnUsed */,
 				7ABC85D92804663D00E329B7 /* APIManager.swift */,
-				7ABC85D32804652600E329B7 /* HomeListView.swift */,
-				7ABC85CF280464A300E329B7 /* ModalData.swift */,
 				7ABC85CD2804645E00E329B7 /* HorizontalCell.swift */,
-				7ABC85CB2804641C00E329B7 /* SearchBar.swift */,
 				7ABC85C928045AC700E329B7 /* NavigationBar.swift */,
 				7ABC85C728045AA500E329B7 /* CustomText.swift */,
 				7ABC85C42803F3E200E329B7 /* TableCollectionView.swift */,
+				7ABC85EB2806D31500E329B7 /* SettingView.swift */,
+				7ABC85ED2806D43700E329B7 /* SettingViewModal.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -314,6 +317,9 @@
 		7ABC85E628058E6900E329B7 /* UnUsed */ = {
 			isa = PBXGroup;
 			children = (
+				7ABC85CB2804641C00E329B7 /* SearchBar.swift */,
+				7ABC85CF280464A300E329B7 /* ModalData.swift */,
+				7ABC85D32804652600E329B7 /* HomeListView.swift */,
 				7ABC85E02804674500E329B7 /* NetworkManager.swift */,
 				7ABC85E42804686000E329B7 /* APIConstant.swift */,
 				7ABC85DB2804664F00E329B7 /* APIConfiguration.swift */,
@@ -474,6 +480,7 @@
 				7ABC85C52803F3E200E329B7 /* TableCollectionView.swift in Sources */,
 				7ABC85DC2804664F00E329B7 /* APIConfiguration.swift in Sources */,
 				18AA865627F47A0D0069610E /* UIImageView+Extension.swift in Sources */,
+				7ABC85EC2806D31500E329B7 /* SettingView.swift in Sources */,
 				18AA863427F4270E0069610E /* UITableView+Extension.swift in Sources */,
 				18AA864027F431480069610E /* Array+Extension.swift in Sources */,
 				18C57C4B27EB1A7800F2AA77 /* InterviewPreparation.xcdatamodeld in Sources */,
@@ -481,6 +488,7 @@
 				7ABC85CC2804641C00E329B7 /* SearchBar.swift in Sources */,
 				18C57C8827EB37B200F2AA77 /* EmployeeTableCell.swift in Sources */,
 				18847E9527F6B85300B7D7C4 /* CompositonViewModal.swift in Sources */,
+				7ABC85EE2806D43700E329B7 /* SettingViewModal.swift in Sources */,
 				7ABC85D42804652600E329B7 /* HomeListView.swift in Sources */,
 				7ABC85CA28045AC700E329B7 /* NavigationBar.swift in Sources */,
 				18C57C8E27EB456500F2AA77 /* Employee.swift in Sources */,
