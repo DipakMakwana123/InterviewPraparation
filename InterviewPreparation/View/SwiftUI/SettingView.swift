@@ -54,8 +54,7 @@ struct SettingView: View {
                     .frame(width: UIScreen.main.bounds.width, height: 250)
                     .background(backgroundColor)
                     Divider()
-                        .frame( height: 1)
-                    
+                        .background(Color.gray)
                     ///
                     Form {
                         VStack {
@@ -75,6 +74,7 @@ struct SettingView: View {
                     .foregroundColor(Color.white)
                     .background(Color.black)
                 }
+                .background(backgroundColor)
                 .navigationTitle("More")
                 .navigationBarTitleDisplayMode(.inline)
             }
