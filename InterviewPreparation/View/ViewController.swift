@@ -8,6 +8,7 @@
 import UIKit
 import Combine 
 import SwiftUI
+import RxSwift
 
 class ViewController: UIViewController {
     
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
     private func configureTableView(){
         guard let table = self.tableView else {return}
         table.configure(dataSource: self,delegate: self)
+        table.separatorStyle = .singleLine
         table.registerCell(identifiers: [ListTableCell.identifier])
     }
     
