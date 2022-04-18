@@ -54,6 +54,11 @@
 		7ABC85E828058F4200E329B7 /* SwiftUIViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85E728058F4200E329B7 /* SwiftUIViewModal.swift */; };
 		7ABC85EC2806D31500E329B7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85EB2806D31500E329B7 /* SettingView.swift */; };
 		7ABC85EE2806D43700E329B7 /* SettingViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85ED2806D43700E329B7 /* SettingViewModal.swift */; };
+		7ABC8607280D39BF00E329B7 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABC8606280D39BF00E329B7 /* RxCocoa */; };
+		7ABC8609280D39BF00E329B7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABC8608280D39BF00E329B7 /* RxSwift */; };
+		7ABC860D280D3A4A00E329B7 /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC860B280D3A4A00E329B7 /* RxSwiftViewController.swift */; };
+		7ABC860E280D3A4A00E329B7 /* RxSwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC860C280D3A4A00E329B7 /* RxSwiftViewController.xib */; };
+		7ABC8610280D3A6B00E329B7 /* RxSwiftViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC860F280D3A6B00E329B7 /* RxSwiftViewModal.swift */; };
 		C2A10A4C4537A231FCBD897B /* Pods_InterviewPreparation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A271010558C3BDC9C1423D /* Pods_InterviewPreparation.framework */; };
 		F4C197FDB0E7BDAF7662FD83 /* Pods_InterviewPreparationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A39F592E89D4EC32087DE66 /* Pods_InterviewPreparationTests.framework */; };
 /* End PBXBuildFile section */
@@ -134,6 +139,9 @@
 		7ABC85E728058F4200E329B7 /* SwiftUIViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewModal.swift; sourceTree = "<group>"; };
 		7ABC85EB2806D31500E329B7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		7ABC85ED2806D43700E329B7 /* SettingViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModal.swift; sourceTree = "<group>"; };
+		7ABC860B280D3A4A00E329B7 /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
+		7ABC860C280D3A4A00E329B7 /* RxSwiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxSwiftViewController.xib; sourceTree = "<group>"; };
+		7ABC860F280D3A6B00E329B7 /* RxSwiftViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewModal.swift; sourceTree = "<group>"; };
 		85A4726A115E44E24C15448D /* Pods-InterviewPreparationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewPreparationTests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewPreparationTests/Pods-InterviewPreparationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C67BE237BEB030B48C1E11C2 /* Pods_InterviewPreparation_InterviewPreparationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewPreparation_InterviewPreparationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,7 +151,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ABC8607280D39BF00E329B7 /* RxCocoa in Frameworks */,
 				7ABC85DF280466BA00E329B7 /* Alamofire in Frameworks */,
+				7ABC8609280D39BF00E329B7 /* RxSwift in Frameworks */,
 				C2A10A4C4537A231FCBD897B /* Pods_InterviewPreparation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +255,7 @@
 		18C57C7627EB1A9000F2AA77 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7ABC860A280D3A2800E329B7 /* RxSwift */,
 				7ABC85C62804275100E329B7 /* SwiftUI */,
 				7ABC85BF2803F0BB00E329B7 /* TableView + CollectionView */,
 				18847E8C27F6B78000B7D7C4 /* CompositionLayout */,
@@ -356,6 +367,16 @@
 			path = UnUsed;
 			sourceTree = "<group>";
 		};
+		7ABC860A280D3A2800E329B7 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				7ABC860B280D3A4A00E329B7 /* RxSwiftViewController.swift */,
+				7ABC860C280D3A4A00E329B7 /* RxSwiftViewController.xib */,
+				7ABC860F280D3A6B00E329B7 /* RxSwiftViewModal.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
 		836C9A42E949E6A774D95AC4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,7 +387,6 @@
 				85A4726A115E44E24C15448D /* Pods-InterviewPreparationTests.debug.xcconfig */,
 				0AC37C7B65CDB1F6F4B7957B /* Pods-InterviewPreparationTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -389,6 +409,8 @@
 			name = InterviewPreparation;
 			packageProductDependencies = (
 				7ABC85DE280466BA00E329B7 /* Alamofire */,
+				7ABC8606280D39BF00E329B7 /* RxCocoa */,
+				7ABC8608280D39BF00E329B7 /* RxSwift */,
 			);
 			productName = InterviewPreparation;
 			productReference = 18C57C3D27EB1A7800F2AA77 /* InterviewPreparation.app */;
@@ -402,7 +424,6 @@
 				18C57C5227EB1A7B00F2AA77 /* Sources */,
 				18C57C5327EB1A7B00F2AA77 /* Frameworks */,
 				18C57C5427EB1A7B00F2AA77 /* Resources */,
-				93FE7091CA6D9194584DE3BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -465,8 +486,9 @@
 			);
 			mainGroup = 18C57C3427EB1A7800F2AA77;
 			packageReferences = (
-				18AA865127F479E40069610E /* XCRemoteSwiftPackageReference "SDWebImage.git" */,
-				7ABC85DD280466BA00E329B7 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+				18AA865127F479E40069610E /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				7ABC85DD280466BA00E329B7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7ABC8605280D39BF00E329B7 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 18C57C3E27EB1A7800F2AA77 /* Products */;
 			projectDirPath = "";
@@ -485,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C57C5027EB1A7B00F2AA77 /* LaunchScreen.storyboard in Resources */,
+				7ABC860E280D3A4A00E329B7 /* RxSwiftViewController.xib in Resources */,
 				18C57C4D27EB1A7B00F2AA77 /* Assets.xcassets in Resources */,
 				18AA864727F435D50069610E /* CombineViewController.xib in Resources */,
 				18AA863B27F427E20069610E /* ListTableCell.xib in Resources */,
@@ -556,23 +579,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		93FE7091CA6D9194584DE3BE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InterviewPreparationTests/Pods-InterviewPreparationTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InterviewPreparationTests/Pods-InterviewPreparationTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InterviewPreparationTests/Pods-InterviewPreparationTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C4D22AE271A114156F2DA0A6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -602,6 +608,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ABC8610280D3A6B00E329B7 /* RxSwiftViewModal.swift in Sources */,
 				1863ABA727EC233000575DEC /* ErrorMessages.swift in Sources */,
 				7ABC85CE2804645E00E329B7 /* HorizontalCell.swift in Sources */,
 				7ABC85C22803F0EB00E329B7 /* Table+CollectionViewController.swift in Sources */,
@@ -634,6 +641,7 @@
 				18AA864D27F4389B0069610E /* CombineViewModal.swift in Sources */,
 				7ABC85D8280465AF00E329B7 /* Contents.swift in Sources */,
 				18847E8F27F6B7A000B7D7C4 /* CompositionViewController.swift in Sources */,
+				7ABC860D280D3A4A00E329B7 /* RxSwiftViewController.swift in Sources */,
 				18AA864627F435D50069610E /* CombineViewController.swift in Sources */,
 				18C57C4327EB1A7800F2AA77 /* SceneDelegate.swift in Sources */,
 				7ABC85C828045AA500E329B7 /* CustomText.swift in Sources */,
@@ -971,7 +979,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		18AA865127F479E40069610E /* XCRemoteSwiftPackageReference "SDWebImage.git" */ = {
+		18AA865127F479E40069610E /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
@@ -979,7 +987,7 @@
 				minimumVersion = 5.12.5;
 			};
 		};
-		7ABC85DD280466BA00E329B7 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+		7ABC85DD280466BA00E329B7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -987,13 +995,31 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		7ABC8605280D39BF00E329B7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		7ABC85DE280466BA00E329B7 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7ABC85DD280466BA00E329B7 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
+			package = 7ABC85DD280466BA00E329B7 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		7ABC8606280D39BF00E329B7 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7ABC8605280D39BF00E329B7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		7ABC8608280D39BF00E329B7 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7ABC8605280D39BF00E329B7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 

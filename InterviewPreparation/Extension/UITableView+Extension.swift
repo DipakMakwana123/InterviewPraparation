@@ -21,7 +21,7 @@ extension UITableView {
             self.register(UINib(nibName: identifier, bundle: .main), forCellReuseIdentifier: identifier)
         }
     }
-    func configure(dataSource:UITableViewDataSource, delegate:UITableViewDelegate){
+    func configure(dataSource:UITableViewDataSource, delegate:UITableViewDelegate?){
         
         self.showsVerticalScrollIndicator = false
         self.dataSource = dataSource

@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+     
         configureViews()
         // apiOperations()
     }
@@ -90,15 +91,24 @@ extension ViewController: UITableViewDelegate{
             let viewController = CompositionViewController(nibName: "CompositionViewController",bundle:nil)
             self.navigationController?.pushViewController(viewController, animated: true)
         }
-        else if obj.id == .tableViewCollectionView   {
+        else if obj.id == .tableViewCollectionView   { // SwiftUI
             let viewController = UIHostingController(rootView: TableCollectionView())
             self.navigationController?.navigationBar.isHidden = true 
             self.navigationController?.pushViewController(viewController, animated: true)
         }
-        else if  obj.id == .uiKitSwiftUI  {
+        else if  obj.id == .uiKitSwiftUI  { // SwiftUI
             let viewController = UIHostingController(rootView: SettingView())
             self.navigationController?.navigationBar.isHidden = true
             self.navigationController?.pushViewController(viewController, animated: true)
         }
+        else if  obj.id == .rxSwift  { // SwiftUI
+            let viewController = RxSwiftViewController(nibName: "RxSwiftViewController",bundle:nil)
+           // self.navigationController?.navigationBar.isHidden = true
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
     }
+}
+
+extension UIViewController {
+    
 }
