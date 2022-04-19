@@ -71,7 +71,7 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard  let cell = tableView.dequeueReusableCell(withIdentifier: ListTableCell.identifier, for: indexPath) as? ListTableCell,let obj = viewModal.courseList[safe:indexPath.row] else {return UITableViewCell()}
-        cell.textLabel?.text = obj.name
+        cell.lblTitle?.text = obj.name
         
         return cell
     }
@@ -85,30 +85,63 @@ extension ViewController: UITableViewDelegate{
         guard let obj = viewModal.courseList[safe:indexPath.row] else {return}
         
         if obj.id == .combine {
-            let viewController = CombineViewController(nibName: "CombineViewController",bundle:nil)
-            self.navigationController?.pushViewController(viewController, animated: true)
+            self.navigateToCombineVC()
         }else if obj.id == .compositionalLayout {
-            let viewController = CompositionViewController(nibName: "CompositionViewController",bundle:nil)
-            self.navigationController?.pushViewController(viewController, animated: true)
+            self.navigateToCompositionalLayout()
         }
         else if obj.id == .tableViewCollectionView   { // SwiftUI
-            let viewController = UIHostingController(rootView: TableCollectionView())
-            self.navigationController?.navigationBar.isHidden = true 
-            self.navigationController?.pushViewController(viewController, animated: true)
+            self.navigateToSwiftUI_TableCollectionView()
+        }
+        else if  obj.id == .swiftUI  { // SwiftUI
+            self.navigateToSwiftUI_SettingDetailView()
         }
         else if  obj.id == .uiKitSwiftUI  { // SwiftUI
-            let viewController = UIHostingController(rootView: SettingView())
-            self.navigationController?.navigationBar.isHidden = true
-            self.navigationController?.pushViewController(viewController, animated: true)
+            self.navigateToSwiftUI_SettingView()
         }
         else if  obj.id == .rxSwift  { // SwiftUI
-            let viewController = RxSwiftViewController(nibName: "RxSwiftViewController",bundle:nil)
-           // self.navigationController?.navigationBar.isHidden = true
-            self.navigationController?.pushViewController(viewController, animated: true)
+            self.navigateToRxSwiftVC()
         }
     }
 }
 
 extension UIViewController {
     
+}
+
+extension UIViewController{
+    
+    func navigateToCombineVC(){
+        let viewController = CombineViewController(nibName: "CombineViewController",bundle:nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    func navigateToCompositionalLayout(){
+        let viewController = CompositionViewController(nibName: "CompositionViewController",bundle:nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func navigateToRxSwiftVC(){
+        let viewController = RxSwiftViewController(nibName: "RxSwiftViewController",bundle:nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+}
+
+//// SWift UI Navigation
+extension UIViewController{
+    
+    func navigateToSwiftUI_TableCollectionView(){
+        let viewController = UIHostingController(rootView: TableCollectionView())
+        self.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    func navigateToSwiftUI_SettingView(){
+        let viewController = UIHostingController(rootView: SettingView())
+        self.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    func navigateToSwiftUI_SettingDetailView(){
+        let viewController = UIHostingController(rootView: SettingDetail())
+        //self.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }

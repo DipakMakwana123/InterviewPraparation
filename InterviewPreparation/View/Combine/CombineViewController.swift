@@ -67,7 +67,7 @@ extension CombineViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard  let cell = tableView.dequeueReusableCell(withIdentifier: ListTableCell.identifier, for: indexPath) as? ListTableCell,let obj = viewModal.employees.data?[safe:indexPath.row]  else {return UITableViewCell()}
-        cell.textLabel?.text = "\(obj.name)'s salary is: \(obj.salary)"
+        cell.lblTitle?.text = "\(obj.name)'s salary is: \(obj.salary)"
         return cell
     }
 }

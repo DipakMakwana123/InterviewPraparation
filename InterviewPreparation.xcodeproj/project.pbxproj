@@ -54,11 +54,16 @@
 		7ABC85E828058F4200E329B7 /* SwiftUIViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85E728058F4200E329B7 /* SwiftUIViewModal.swift */; };
 		7ABC85EC2806D31500E329B7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85EB2806D31500E329B7 /* SettingView.swift */; };
 		7ABC85EE2806D43700E329B7 /* SettingViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC85ED2806D43700E329B7 /* SettingViewModal.swift */; };
-		7ABC8607280D39BF00E329B7 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABC8606280D39BF00E329B7 /* RxCocoa */; };
-		7ABC8609280D39BF00E329B7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABC8608280D39BF00E329B7 /* RxSwift */; };
 		7ABC860D280D3A4A00E329B7 /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC860B280D3A4A00E329B7 /* RxSwiftViewController.swift */; };
 		7ABC860E280D3A4A00E329B7 /* RxSwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABC860C280D3A4A00E329B7 /* RxSwiftViewController.xib */; };
 		7ABC8610280D3A6B00E329B7 /* RxSwiftViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC860F280D3A6B00E329B7 /* RxSwiftViewModal.swift */; };
+		7ABC8612280E83DE00E329B7 /* SettingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC8611280E83DE00E329B7 /* SettingDetail.swift */; };
+		7ADFBC71280E866B00D3E734 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 7ADFBC70280E866B00D3E734 /* RxCocoa */; };
+		7ADFBC73280E866B00D3E734 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7ADFBC72280E866B00D3E734 /* RxSwift */; };
+		7ADFBC75280E91DD00D3E734 /* SettingTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC74280E91DD00D3E734 /* SettingTopView.swift */; };
+		7ADFBC78280E926F00D3E734 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC77280E926F00D3E734 /* FormView.swift */; };
+		7ADFBC7A280E9D6200D3E734 /* SettingDetailViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC79280E9D6200D3E734 /* SettingDetailViewModal.swift */; };
+		7ADFBC7D280EC6CB00D3E734 /* SettingToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC7C280EC6CB00D3E734 /* SettingToggleView.swift */; };
 		C2A10A4C4537A231FCBD897B /* Pods_InterviewPreparation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A271010558C3BDC9C1423D /* Pods_InterviewPreparation.framework */; };
 		F4C197FDB0E7BDAF7662FD83 /* Pods_InterviewPreparationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A39F592E89D4EC32087DE66 /* Pods_InterviewPreparationTests.framework */; };
 /* End PBXBuildFile section */
@@ -142,6 +147,11 @@
 		7ABC860B280D3A4A00E329B7 /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
 		7ABC860C280D3A4A00E329B7 /* RxSwiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxSwiftViewController.xib; sourceTree = "<group>"; };
 		7ABC860F280D3A6B00E329B7 /* RxSwiftViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewModal.swift; sourceTree = "<group>"; };
+		7ABC8611280E83DE00E329B7 /* SettingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDetail.swift; sourceTree = "<group>"; };
+		7ADFBC74280E91DD00D3E734 /* SettingTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTopView.swift; sourceTree = "<group>"; };
+		7ADFBC77280E926F00D3E734 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		7ADFBC79280E9D6200D3E734 /* SettingDetailViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDetailViewModal.swift; sourceTree = "<group>"; };
+		7ADFBC7C280EC6CB00D3E734 /* SettingToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingToggleView.swift; sourceTree = "<group>"; };
 		85A4726A115E44E24C15448D /* Pods-InterviewPreparationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewPreparationTests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewPreparationTests/Pods-InterviewPreparationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C67BE237BEB030B48C1E11C2 /* Pods_InterviewPreparation_InterviewPreparationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewPreparation_InterviewPreparationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -151,9 +161,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ABC8607280D39BF00E329B7 /* RxCocoa in Frameworks */,
+				7ADFBC71280E866B00D3E734 /* RxCocoa in Frameworks */,
 				7ABC85DF280466BA00E329B7 /* Alamofire in Frameworks */,
-				7ABC8609280D39BF00E329B7 /* RxSwift in Frameworks */,
+				7ADFBC73280E866B00D3E734 /* RxSwift in Frameworks */,
 				C2A10A4C4537A231FCBD897B /* Pods_InterviewPreparation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,14 +350,14 @@
 		7ABC85C62804275100E329B7 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				7ADFBC7B280E9D9600D3E734 /* ViewModal */,
+				7ADFBC76280E925D00D3E734 /* Views */,
 				7ABC85E628058E6900E329B7 /* UnUsed */,
 				7ABC85D92804663D00E329B7 /* APIManager.swift */,
 				7ABC85CD2804645E00E329B7 /* HorizontalCell.swift */,
 				7ABC85C928045AC700E329B7 /* NavigationBar.swift */,
 				7ABC85C728045AA500E329B7 /* CustomText.swift */,
 				7ABC85C42803F3E200E329B7 /* TableCollectionView.swift */,
-				7ABC85EB2806D31500E329B7 /* SettingView.swift */,
-				7ABC85ED2806D43700E329B7 /* SettingViewModal.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -375,6 +385,27 @@
 				7ABC860F280D3A6B00E329B7 /* RxSwiftViewModal.swift */,
 			);
 			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		7ADFBC76280E925D00D3E734 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7ADFBC74280E91DD00D3E734 /* SettingTopView.swift */,
+				7ABC85EB2806D31500E329B7 /* SettingView.swift */,
+				7ADFBC77280E926F00D3E734 /* FormView.swift */,
+				7ABC8611280E83DE00E329B7 /* SettingDetail.swift */,
+				7ADFBC7C280EC6CB00D3E734 /* SettingToggleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7ADFBC7B280E9D9600D3E734 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				7ABC85ED2806D43700E329B7 /* SettingViewModal.swift */,
+				7ADFBC79280E9D6200D3E734 /* SettingDetailViewModal.swift */,
+			);
+			path = ViewModal;
 			sourceTree = "<group>";
 		};
 		836C9A42E949E6A774D95AC4 /* Pods */ = {
@@ -409,8 +440,8 @@
 			name = InterviewPreparation;
 			packageProductDependencies = (
 				7ABC85DE280466BA00E329B7 /* Alamofire */,
-				7ABC8606280D39BF00E329B7 /* RxCocoa */,
-				7ABC8608280D39BF00E329B7 /* RxSwift */,
+				7ADFBC70280E866B00D3E734 /* RxCocoa */,
+				7ADFBC72280E866B00D3E734 /* RxSwift */,
 			);
 			productName = InterviewPreparation;
 			productReference = 18C57C3D27EB1A7800F2AA77 /* InterviewPreparation.app */;
@@ -488,7 +519,7 @@
 			packageReferences = (
 				18AA865127F479E40069610E /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				7ABC85DD280466BA00E329B7 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				7ABC8605280D39BF00E329B7 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				7ADFBC6F280E866B00D3E734 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 18C57C3E27EB1A7800F2AA77 /* Products */;
 			projectDirPath = "";
@@ -608,8 +639,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADFBC7A280E9D6200D3E734 /* SettingDetailViewModal.swift in Sources */,
 				7ABC8610280D3A6B00E329B7 /* RxSwiftViewModal.swift in Sources */,
 				1863ABA727EC233000575DEC /* ErrorMessages.swift in Sources */,
+				7ADFBC7D280EC6CB00D3E734 /* SettingToggleView.swift in Sources */,
 				7ABC85CE2804645E00E329B7 /* HorizontalCell.swift in Sources */,
 				7ABC85C22803F0EB00E329B7 /* Table+CollectionViewController.swift in Sources */,
 				18C57C4527EB1A7800F2AA77 /* ViewController.swift in Sources */,
@@ -619,8 +652,10 @@
 				7ABC85DC2804664F00E329B7 /* APIConfiguration.swift in Sources */,
 				18AA865627F47A0D0069610E /* UIImageView+Extension.swift in Sources */,
 				7ABC85EC2806D31500E329B7 /* SettingView.swift in Sources */,
+				7ABC8612280E83DE00E329B7 /* SettingDetail.swift in Sources */,
 				18AA863427F4270E0069610E /* UITableView+Extension.swift in Sources */,
 				18AA864027F431480069610E /* Array+Extension.swift in Sources */,
+				7ADFBC75280E91DD00D3E734 /* SettingTopView.swift in Sources */,
 				18C57C4B27EB1A7800F2AA77 /* InterviewPreparation.xcdatamodeld in Sources */,
 				7ABC85E828058F4200E329B7 /* SwiftUIViewModal.swift in Sources */,
 				7ABC85CC2804641C00E329B7 /* SearchBar.swift in Sources */,
@@ -638,6 +673,7 @@
 				7ABC85D62804658C00E329B7 /* HomeViewModal.swift in Sources */,
 				18C57C4127EB1A7800F2AA77 /* AppDelegate.swift in Sources */,
 				7ABC85E52804686000E329B7 /* APIConstant.swift in Sources */,
+				7ADFBC78280E926F00D3E734 /* FormView.swift in Sources */,
 				18AA864D27F4389B0069610E /* CombineViewModal.swift in Sources */,
 				7ABC85D8280465AF00E329B7 /* Contents.swift in Sources */,
 				18847E8F27F6B7A000B7D7C4 /* CompositionViewController.swift in Sources */,
@@ -995,7 +1031,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		7ABC8605280D39BF00E329B7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		7ADFBC6F280E866B00D3E734 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
 			requirement = {
@@ -1011,14 +1047,14 @@
 			package = 7ABC85DD280466BA00E329B7 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		7ABC8606280D39BF00E329B7 /* RxCocoa */ = {
+		7ADFBC70280E866B00D3E734 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7ABC8605280D39BF00E329B7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 7ADFBC6F280E866B00D3E734 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		7ABC8608280D39BF00E329B7 /* RxSwift */ = {
+		7ADFBC72280E866B00D3E734 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7ABC8605280D39BF00E329B7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 7ADFBC6F280E866B00D3E734 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

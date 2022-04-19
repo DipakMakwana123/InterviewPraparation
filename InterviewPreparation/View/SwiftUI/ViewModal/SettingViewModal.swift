@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct SettingViewModal{
+class  SettingViewModal: ObservableObject{
     
-    let lists: [Setting] = [
+    @Published var lists: [Setting] = [
         Setting(title: "Notification", image: "bell"),
         Setting(title: "Kids", image: "bell"),
         Setting(title: "TV Guide", image: "tv"),

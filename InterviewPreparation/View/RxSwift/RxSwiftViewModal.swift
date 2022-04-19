@@ -8,6 +8,7 @@
 import Foundation
 import RxSwift
 
+
 struct RxSwiftViewModal {
  
     let apiManager: APIManager
