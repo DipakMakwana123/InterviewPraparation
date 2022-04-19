@@ -23,6 +23,7 @@ struct SettingDetail: View {
             
             }
         }
+        .background(Color(UIColor.systemRed).opacity(0.9))
     }
 }
 
@@ -32,8 +33,9 @@ struct SectionHeader: View {
     var body: some View {
         Text(strTitle)
             .foregroundColor(Color.blue)
-            .font(.body)
-            .fontWeight(.regular)
+            .font(.system(size: 12, weight: .bold, design: .default))
+
+//            .fontWeight(.small)
     }
 }
 

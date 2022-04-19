@@ -26,9 +26,8 @@ struct SettingToggleView: View {
                     Text(subItem.title)
                         .padding(margin)
                     Spacer()
-                    
                 }
-                if let desc = subItem.description {
+                if let desc = subItem.description , !desc.isEmpty {
                     HStack {
                         Text(desc)
                             .padding(margin)

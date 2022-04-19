@@ -27,6 +27,18 @@ class SettingDetailViewModal: ObservableObject{
                                  TitleDescriptionModal(title: "Manage Reminders", description: nil, isToggle: false)
                                 ]
                             ),
+        SettingDetailModal(title: "KIDS",
+                           lists:[
+                            TitleDescriptionModal(title: "Kids PIN", description: "Enable this if you   want to be asked for the PIN when you exist from Kids Mode  ",isToggle: true),
+                                ]
+                            ),
+        SettingDetailModal(title: "HELP",
+                           lists:[
+                            TitleDescriptionModal(title: "FAQs", description: "",isToggle: false),
+                            TitleDescriptionModal(title: "Live Chat", description: "",isToggle: false),
+                            TitleDescriptionModal(title: "Device Info", description: "",isToggle: false),
+                                ]
+                            ),
     ]
 }
 
