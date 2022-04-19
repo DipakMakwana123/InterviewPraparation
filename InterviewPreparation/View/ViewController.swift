@@ -140,8 +140,8 @@ extension UIViewController{
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     func navigateToSwiftUI_SettingDetailView(){
-        let viewController = UIHostingController(rootView: SettingDetail())
-        //self.navigationController?.navigationBar.isHidden = true
+        let viewController = UIHostingController(rootView: DownloadView())
+        self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

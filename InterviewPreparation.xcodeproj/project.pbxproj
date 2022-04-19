@@ -64,6 +64,8 @@
 		7ADFBC78280E926F00D3E734 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC77280E926F00D3E734 /* FormView.swift */; };
 		7ADFBC7A280E9D6200D3E734 /* SettingDetailViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC79280E9D6200D3E734 /* SettingDetailViewModal.swift */; };
 		7ADFBC7D280EC6CB00D3E734 /* SettingToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC7C280EC6CB00D3E734 /* SettingToggleView.swift */; };
+		7ADFBC7F280ED87D00D3E734 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC7E280ED87D00D3E734 /* DownloadView.swift */; };
+		7ADFBC81280EDFE600D3E734 /* SegmentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC80280EDFE600D3E734 /* SegmentPicker.swift */; };
 		C2A10A4C4537A231FCBD897B /* Pods_InterviewPreparation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A271010558C3BDC9C1423D /* Pods_InterviewPreparation.framework */; };
 		F4C197FDB0E7BDAF7662FD83 /* Pods_InterviewPreparationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A39F592E89D4EC32087DE66 /* Pods_InterviewPreparationTests.framework */; };
 /* End PBXBuildFile section */
@@ -152,6 +154,8 @@
 		7ADFBC77280E926F00D3E734 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		7ADFBC79280E9D6200D3E734 /* SettingDetailViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDetailViewModal.swift; sourceTree = "<group>"; };
 		7ADFBC7C280EC6CB00D3E734 /* SettingToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingToggleView.swift; sourceTree = "<group>"; };
+		7ADFBC7E280ED87D00D3E734 /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
+		7ADFBC80280EDFE600D3E734 /* SegmentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentPicker.swift; sourceTree = "<group>"; };
 		85A4726A115E44E24C15448D /* Pods-InterviewPreparationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewPreparationTests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewPreparationTests/Pods-InterviewPreparationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C67BE237BEB030B48C1E11C2 /* Pods_InterviewPreparation_InterviewPreparationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewPreparation_InterviewPreparationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -395,6 +399,8 @@
 				7ADFBC77280E926F00D3E734 /* FormView.swift */,
 				7ABC8611280E83DE00E329B7 /* SettingDetail.swift */,
 				7ADFBC7C280EC6CB00D3E734 /* SettingToggleView.swift */,
+				7ADFBC7E280ED87D00D3E734 /* DownloadView.swift */,
+				7ADFBC80280EDFE600D3E734 /* SegmentPicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -658,6 +664,7 @@
 				7ADFBC75280E91DD00D3E734 /* SettingTopView.swift in Sources */,
 				18C57C4B27EB1A7800F2AA77 /* InterviewPreparation.xcdatamodeld in Sources */,
 				7ABC85E828058F4200E329B7 /* SwiftUIViewModal.swift in Sources */,
+				7ADFBC81280EDFE600D3E734 /* SegmentPicker.swift in Sources */,
 				7ABC85CC2804641C00E329B7 /* SearchBar.swift in Sources */,
 				18C57C8827EB37B200F2AA77 /* EmployeeTableCell.swift in Sources */,
 				18847E9527F6B85300B7D7C4 /* CompositonViewModal.swift in Sources */,
@@ -677,6 +684,7 @@
 				18AA864D27F4389B0069610E /* CombineViewModal.swift in Sources */,
 				7ABC85D8280465AF00E329B7 /* Contents.swift in Sources */,
 				18847E8F27F6B7A000B7D7C4 /* CompositionViewController.swift in Sources */,
+				7ADFBC7F280ED87D00D3E734 /* DownloadView.swift in Sources */,
 				7ABC860D280D3A4A00E329B7 /* RxSwiftViewController.swift in Sources */,
 				18AA864627F435D50069610E /* CombineViewController.swift in Sources */,
 				18C57C4327EB1A7800F2AA77 /* SceneDelegate.swift in Sources */,

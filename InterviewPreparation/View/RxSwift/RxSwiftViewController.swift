@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class RxSwiftViewController: UIViewController {
 
@@ -27,38 +28,45 @@ class RxSwiftViewController: UIViewController {
     }
     private func configureTableView(){
        guard let tableView = self.tableView else {return}
-        tableView.configure(dataSource: self,delegate: nil)
+//tableView.configure(dataSource: self,delegate: nil)
         tableView.separatorStyle = .singleLine
         tableView.registerCell(identifiers: [ListTableCell.identifier])
         
-        let client = APIClient.shared
-            do{
-              try client.getRecipes().subscribe(
-                onNext: { [weak self] result in
-                    //MARK: display in UITableView
-
-                    guard let self = self else {return}
-                    self.viewModal.posts = result
-                    self.reloadData()
-                },
-                onError: { error in
-                   print(error.localizedDescription)
-                },
-                onCompleted: {
-                   print("Completed event.")
-                    
+//        let client = APIClient.shared
+//            do{
+//              try client.getRecipes().subscribe(
+//                onNext: { [weak self] result in
+//                    //MARK: display in UITableView
+//
+//                    guard let self = self else {return}
+//                    self.viewModal.posts = result
+//                    self.reloadData()
+//                },
+//                onError: { error in
+//                   print(error.localizedDescription)
+//                },
+//                onCompleted: {
+//                   print("Completed event.")
+//
+//                }).disposed(by: disposeBag)
+//              }
+//              catch{
+//            }
+//
+   //    tableView.register(ListTableCell.self, forCellReuseIdentifier: ListTableCell.identifier)
+        let request =  APIRequest()
+        let result : Observable<[countryListModel]> = self.viewModal.send(apiRequest: request)
+        //tableView.rx.bind
+        _ = result.bind(to: tableView.rx.items(cellIdentifier: ListTableCell.identifier,cellType: ListTableCell.self)) { ( row, model, cell) in
+            
+                cell.lblTitle?.text = model.name
+            
+        }
+        tableView.rx.modelSelected(countryListModel.self).subscribe(onNext: { item in
+                    print("SelectedItem: \(item.name)")
                 }).disposed(by: disposeBag)
-              }
-              catch{
-            }
+
         
-//        tableView.register(ListTableCell.self, forCellReuseIdentifier: ListTableCell.identifier)
-//        let request =  APIRequest()
-//        let result : Observable<[countryListModel]> = self.viewModal.send(apiRequest: request)
-//        tableView.rx.bind
-//        _ = result.bind(to: tableView.rx.items(cellIdentifier: ListTableCell.identifier)) { ( row, model, cell) in
-//           cell.textLabel?.text = model.name
-//        }
     }
     
     private func reloadData(){

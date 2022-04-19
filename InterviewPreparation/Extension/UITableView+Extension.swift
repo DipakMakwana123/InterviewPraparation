@@ -22,7 +22,6 @@ extension UITableView {
         }
     }
     func configure(dataSource:UITableViewDataSource, delegate:UITableViewDelegate?){
-        
         self.showsVerticalScrollIndicator = false
         self.dataSource = dataSource
         self.delegate = delegate
