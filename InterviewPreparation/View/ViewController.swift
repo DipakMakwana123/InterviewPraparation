@@ -101,6 +101,9 @@ extension ViewController: UITableViewDelegate{
         else if  obj.id == .rxSwift  { // SwiftUI
             self.navigateToRxSwiftVC()
         }
+        else if  obj.id == .liveTV  { // SwiftUI
+            self.navigateToSwiftUI_LiveTVView()
+        }
     }
 }
 
@@ -144,4 +147,10 @@ extension UIViewController{
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.pushViewController(viewController, animated: true)
     }
+    func navigateToSwiftUI_LiveTVView(){
+        let viewController = LiveTVHostingVC(rootView: LiveTVView(navigationContoller: UINavigationController()))
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }
+
+

@@ -23,7 +23,7 @@ class FirstViewModal {
         Course(id: .combine, name: "Combine"),
         Course(id: .compositionalLayout, name: "Compositional Layout"),
         Course(id: .tableViewCollectionView, name: "TableView + CollectionView"),
-        Course(id: .tvOS, name: "TV OS"),
+        Course(id: .liveTV, name: "Live TV"),
         Course(id: .operationQueue, name: "Operation Queue"),
         Course(id: .gcd, name: "GCD"),
         Course(id: .viper, name: "VIPER"),
@@ -76,6 +76,7 @@ enum QuestionType: Int {
     case swiftUI
     case uiKitSwiftUI
     case rxSwift
+    case liveTV
 }
 
 
