@@ -10,28 +10,34 @@ import SwiftUI
 struct CustomSegmentControlView: View {
     
     @ObservedObject var viewModal: LiveTVViewModal
-    
     @State var selectedItem: LiveTVModal
-    
-    
     
     var body: some View {
         
         ScrollView(.horizontal) {
             HStack {
                 ForEach(viewModal.lists,id:\.id) {  item in
-                    Button(action: {
-                        resetValue(selectedItem: item)
-                       // selectedItem = item
-                    }, label: {
-                        TextCell(item: item, lists: viewModal.lists)
+//                    Button(action: {
+//                        resetValue(selectedItem: item)
+//                       // selectedItem = item
+//                    }, label: {
+                        TextCell(item: selectedItem, selectedItem: selectedItem, lists: viewModal.lists)
                         
-                    })
+                   // })
+                    .onAppear{
+                        selectedItem = item
+                    }
                 }
+                
             }
         }
     }
     private func  resetValue(selectedItem: LiveTVModal){
+        
+        //viewModal.lists.filter({$0.id == selectedItem.id}).map({$0.selected = true})
+
+        
+        //let _ = viewModal.lists.map({return $0.selected = $0.id == selectedItem.id ? true : false})
         for var item in viewModal.lists {
             item.selected = false
             if item.id == selectedItem.id {
@@ -50,8 +56,8 @@ struct CustomSegmentControlView: View {
 
 struct TextCell: View {
    
-    @State var item: LiveTVModal
-  //  @State var selectedItem: LiveTVModal
+    var item: LiveTVModal
+    @State var selectedItem: LiveTVModal
     
     
     var lists:[LiveTVModal]
@@ -60,19 +66,19 @@ struct TextCell: View {
     
     var body: some View {
         
-//        Button(action: {
-//            item.selected = true
-//            selectedItem = item
-//
-//            //resetValue()
-//
-//        }, label: {
+        Button(action: {
+           // item.selected = true
+            selectedItem = item
+
+            resetValue()
+
+        }, label: {
             VStack {
                 Text(item.title)
                     .padding(4)
                     .background(Color.black)
                     .foregroundColor(Color.white)
-                if item.selected {
+                if item.id == selectedItem.id  {
                     Divider()
                         .frame(height:5)
                         .background(Color.red)
@@ -80,18 +86,21 @@ struct TextCell: View {
                 Spacer()
             }
             .padding(margin)
-       // })
-    }
-//    private func  resetValue(){
-//        selectedItem.selected = false
-//        for var item in lists {
-//            item.selected = false
-//            if item.id == selectedItem.id {
-//                item.selected = true
-//                selectedItem.selected = true
+        })
+//            .onAppear{
+//                selectedItem = item
 //            }
-//        }
-//    }
+    }
+    private func  resetValue(){
+        selectedItem.selected = false
+        for var item in lists {
+            item.selected = false
+            if item.id == selectedItem.id {
+                item.selected = true
+                selectedItem.selected = true
+            }
+        }
+    }
     
     
 }

@@ -18,18 +18,64 @@ class LiveTVHostingVC: UIHostingController<LiveTVView> {
 
 struct LiveTVView: View {
     
-    var navigationContoller: UINavigationController
+    @ObservedObject private var viewModal =  LiveTVViewModal()
+    @State var selectedItem: LiveTVModal
     
-    private let viewModal =  LiveTVViewModal()
-    
+
     var body: some View {
        
             VStack {
-                CustomSegmentControlView(viewModal: viewModal, selectedItem: LiveTVModal(selected: false))
+               // CustomSegmentControlView(viewModal: viewModal, selectedItem: LiveTVModal(selected: false))
+                ScrollView(.horizontal) {
+                    HStack {
+                        ForEach(viewModal.lists,id:\.id) {  item in
+        
+                           // TextCell(item: selectedItem, selectedItem: selectedItem, lists: viewModal.lists)
+                            Button(action: {
+                               // item.selected = true
+                                selectedItem = item
+
+                                resetValue()
+
+                            }, label: {
+                                VStack {
+                                    Text(item.title)
+                                        .padding(4)
+                                        .background(Color.black)
+                                        .foregroundColor(Color.white)
+                                    if item.id == selectedItem.id {
+                                        Divider()
+                                            .frame(height:5)
+                                            .background(Color.red)
+                                    }
+                                    Spacer()
+                                }
+                                .padding(8)
+                            })
+//                                .onAppear{
+//                                    selectedItem = item
+//                                }
+                        }
+                    }
+                }
                 Spacer()
             }
+           // .environment(viewModal)
             .navigationBarTitle("New Navigation Title")
     }
+    
+    private func  resetValue(){
+        selectedItem.selected = false
+        for var item in viewModal.lists {
+            item.selected = false
+            if item.id == selectedItem.id {
+                item.selected = true
+                selectedItem.selected = true
+            }
+        }
+    }
+    
+
 }
 
 //struct LiveTVView_Previews: PreviewProvider {
