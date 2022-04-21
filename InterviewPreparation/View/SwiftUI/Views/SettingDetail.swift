@@ -31,11 +31,43 @@ struct SectionHeader: View {
     var strTitle: String
     
     var body: some View {
-        Text(strTitle)
-            .foregroundColor(Color.blue)
-            .font(.system(size: 12, weight: .bold, design: .default))
-
-//            .fontWeight(.small)
+        HStack {
+            Text(strTitle)
+                .foregroundColor(Color.blue)
+                .font(.system(size: 12, weight: .bold, design: .default))
+        }
+    }
+}
+struct TextLabel: View {
+    var strTitle: String
+    
+    var body: some View {
+        HStack {
+            Text(strTitle)
+                .foregroundColor(Color.white)
+                .font(.system(size: 17, weight: .regular, design: .default))
+            Spacer()
+        }
+        
+    }
+}
+struct SectionHeaderWithArrow: View {
+    
+    var strTitle: String
+    
+    var body: some View {
+        HStack {
+            Text(strTitle)
+                .foregroundColor(Color.black)
+                .font(.system(size: 14, weight: .bold, design: .default))
+            Spacer()
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "arrow.down.circle.fill")
+                        .foregroundColor(.black)
+                })
+        }
     }
 }
 

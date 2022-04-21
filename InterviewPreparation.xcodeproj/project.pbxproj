@@ -70,6 +70,7 @@
 		7ADFBC87280FD70700D3E734 /* LiveTVViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC86280FD70700D3E734 /* LiveTVViewModal.swift */; };
 		7ADFBC89280FE3A500D3E734 /* CustomSegmentControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC88280FE3A500D3E734 /* CustomSegmentControlView.swift */; };
 		7ADFBC8B2811278B00D3E734 /* UsefulCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC8A2811278B00D3E734 /* UsefulCode.swift */; };
+		7ADFBC8D28112E1000D3E734 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC8C28112E1000D3E734 /* ItemData.swift */; };
 		C2A10A4C4537A231FCBD897B /* Pods_InterviewPreparation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A271010558C3BDC9C1423D /* Pods_InterviewPreparation.framework */; };
 		F4C197FDB0E7BDAF7662FD83 /* Pods_InterviewPreparationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A39F592E89D4EC32087DE66 /* Pods_InterviewPreparationTests.framework */; };
 /* End PBXBuildFile section */
@@ -164,6 +165,7 @@
 		7ADFBC86280FD70700D3E734 /* LiveTVViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTVViewModal.swift; sourceTree = "<group>"; };
 		7ADFBC88280FE3A500D3E734 /* CustomSegmentControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentControlView.swift; sourceTree = "<group>"; };
 		7ADFBC8A2811278B00D3E734 /* UsefulCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsefulCode.swift; sourceTree = "<group>"; };
+		7ADFBC8C28112E1000D3E734 /* ItemData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
 		85A4726A115E44E24C15448D /* Pods-InterviewPreparationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewPreparationTests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewPreparationTests/Pods-InterviewPreparationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C67BE237BEB030B48C1E11C2 /* Pods_InterviewPreparation_InterviewPreparationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewPreparation_InterviewPreparationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -403,6 +405,7 @@
 		7ADFBC76280E925D00D3E734 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7ADFBC8C28112E1000D3E734 /* ItemData.swift */,
 				7ADFBC74280E91DD00D3E734 /* SettingTopView.swift */,
 				7ABC85EB2806D31500E329B7 /* SettingView.swift */,
 				7ADFBC77280E926F00D3E734 /* FormView.swift */,
@@ -657,6 +660,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADFBC8D28112E1000D3E734 /* ItemData.swift in Sources */,
 				7ADFBC7A280E9D6200D3E734 /* SettingDetailViewModal.swift in Sources */,
 				7ADFBC83280FD41000D3E734 /* LiveTVView.swift in Sources */,
 				7ABC8610280D3A6B00E329B7 /* RxSwiftViewModal.swift in Sources */,

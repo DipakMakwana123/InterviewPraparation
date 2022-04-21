@@ -13,43 +13,43 @@ class LiveTVViewModal: ObservableObject{
     
     @Published var lists: [LiveTVModal] = [
         
-        LiveTVModal(title: "All Channels", selected: false, lists: [
+        LiveTVModal(title: "All Channels", selected: false, subItems: [
             VideoList(title: "Origins", time: "11:30 : 12:00", minutes: "200"),
             VideoList(title: "Sports", time: "11:30 : 12:00", minutes: "203"),
         ]),
-        LiveTVModal(title: "All Channels",selected: false,lists: [
+        LiveTVModal(title: "Cartoon Network",selected: false,subItems: [
             VideoList(title: "Origins", time: "11:30 : 12:00", minutes: "200"),
             VideoList(title: "Sports", time: "11:30 : 12:00", minutes: "203"),
         ]),
-        LiveTVModal(title: "All Channels", selected: false, lists: [
+        LiveTVModal(title: "Zee Sports", selected: false, subItems: [
             VideoList(title: "Origins", time: "11:30 : 12:00", minutes: "200"),
             VideoList(title: "Sports", time: "11:30 : 12:00", minutes: "203"),
         ]),
-        LiveTVModal(title: "All Channels",  selected: false,lists: [
+        LiveTVModal(title: "Ten Sports",  selected: false,subItems: [
             VideoList(title: "Origins", time: "11:30 : 12:00", minutes: "200"),
             VideoList(title: "Sports", time: "11:30 : 12:00", minutes: "203"),
         ]),
-        LiveTVModal(title: "All Channels", selected: false, lists: [
+        LiveTVModal(title: "Sports TV", selected: false, subItems: [
             VideoList(title: "Origins", time: "11:30 : 12:00", minutes: "200"),
             VideoList(title: "Sports", time: "11:30 : 12:00", minutes: "203"),
         ]),
-        LiveTVModal(title: "All Channels", selected: false, lists: [
+        LiveTVModal(title: "All Channels", selected: false, subItems: [
             VideoList(title: "Origins", time: "11:30 : 12:00", minutes: "200"),
             VideoList(title: "Sports", time: "11:30 : 12:00", minutes: "203"),
         ]),
-        LiveTVModal(title: "All Channels", selected: false, lists: [
+        LiveTVModal(title: "All Channels", selected: false, subItems: [
             VideoList(title: "Origins", time: "11:30 : 12:00", minutes: "200"),
             VideoList(title: "Sports", time: "11:30 : 12:00", minutes: "203"),
         ]),
-        LiveTVModal(title: "All Channels",  selected: false,lists: [
+        LiveTVModal(title: "All Channels",  selected: false,subItems: [
             VideoList(title: "Origins", time: "11:30 : 12:00", minutes: "200"),
             VideoList(title: "Sports", time: "11:30 : 12:00", minutes: "203"),
         ]),
-        LiveTVModal(title: "All Channels", selected: false, lists: [
+        LiveTVModal(title: "All Channels", selected: false, subItems: [
             VideoList(title: "Origins", time: "11:30 : 12:00", minutes: "200"),
             VideoList(title: "Sports", time: "11:30 : 12:00", minutes: "203"),
         ]),
-        LiveTVModal(title: "All Channels", selected: false, lists: [
+        LiveTVModal(title: "All Channels", selected: false, subItems: [
             VideoList(title: "Origins", time: "11:30 : 12:00", minutes: "200"),
             VideoList(title: "Sports", time: "11:30 : 12:00", minutes: "203"),
         ])
@@ -62,13 +62,13 @@ struct LiveTVModal: Identifiable {
     var id = UUID()
     var title: String
     var selected: Bool
-    var lists: [VideoList]
+    var subItems: [VideoList]?
     
-    init(id: UUID = UUID(),title:String = String() , selected:Bool,lists:[VideoList] = []){
+    init(id: UUID = UUID(),title:String = String() , selected:Bool,subItems:[VideoList]? = nil){
         self.id = id
         self.title = title
         self.selected = selected
-        self.lists = lists
+        self.subItems = subItems
     }
 }
 

@@ -27,7 +27,7 @@ struct HorizontalList: View {
                                 .background(Color.black)
                                 .foregroundColor(Color.white)
                             if item.id == selectedItem.id {
-                                Divider()
+                                    Divider()
                                     .frame(height:5)
                                     .background(Color.red)
                             }
@@ -62,13 +62,8 @@ struct CustomSegmentControlView: View {
         ScrollView(.horizontal) {
             HStack {
                 ForEach(viewModal.lists,id:\.id) {  item in
-//                    Button(action: {
-//                        resetValue(selectedItem: item)
-//                       // selectedItem = item
-//                    }, label: {
                         TextCell(item: selectedItem, selectedItem: selectedItem, lists: viewModal.lists)
                         
-                   // })
                     .onAppear{
                         selectedItem = item
                     }
