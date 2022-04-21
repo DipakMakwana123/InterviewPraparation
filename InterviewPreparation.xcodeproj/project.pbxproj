@@ -69,6 +69,7 @@
 		7ADFBC83280FD41000D3E734 /* LiveTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC82280FD41000D3E734 /* LiveTVView.swift */; };
 		7ADFBC87280FD70700D3E734 /* LiveTVViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC86280FD70700D3E734 /* LiveTVViewModal.swift */; };
 		7ADFBC89280FE3A500D3E734 /* CustomSegmentControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC88280FE3A500D3E734 /* CustomSegmentControlView.swift */; };
+		7ADFBC8B2811278B00D3E734 /* UsefulCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBC8A2811278B00D3E734 /* UsefulCode.swift */; };
 		C2A10A4C4537A231FCBD897B /* Pods_InterviewPreparation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A271010558C3BDC9C1423D /* Pods_InterviewPreparation.framework */; };
 		F4C197FDB0E7BDAF7662FD83 /* Pods_InterviewPreparationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A39F592E89D4EC32087DE66 /* Pods_InterviewPreparationTests.framework */; };
 /* End PBXBuildFile section */
@@ -162,6 +163,7 @@
 		7ADFBC82280FD41000D3E734 /* LiveTVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTVView.swift; sourceTree = "<group>"; };
 		7ADFBC86280FD70700D3E734 /* LiveTVViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTVViewModal.swift; sourceTree = "<group>"; };
 		7ADFBC88280FE3A500D3E734 /* CustomSegmentControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentControlView.swift; sourceTree = "<group>"; };
+		7ADFBC8A2811278B00D3E734 /* UsefulCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsefulCode.swift; sourceTree = "<group>"; };
 		85A4726A115E44E24C15448D /* Pods-InterviewPreparationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewPreparationTests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewPreparationTests/Pods-InterviewPreparationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C67BE237BEB030B48C1E11C2 /* Pods_InterviewPreparation_InterviewPreparationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewPreparation_InterviewPreparationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -250,6 +252,7 @@
 				18C57C4E27EB1A7B00F2AA77 /* LaunchScreen.storyboard */,
 				18C57C5127EB1A7B00F2AA77 /* Info.plist */,
 				18C57C4927EB1A7800F2AA77 /* InterviewPreparation.xcdatamodeld */,
+				7ADFBC8A2811278B00D3E734 /* UsefulCode.swift */,
 			);
 			path = InterviewPreparation;
 			sourceTree = "<group>";
@@ -680,6 +683,7 @@
 				18C57C8827EB37B200F2AA77 /* EmployeeTableCell.swift in Sources */,
 				18847E9527F6B85300B7D7C4 /* CompositonViewModal.swift in Sources */,
 				7ABC85EE2806D43700E329B7 /* SettingViewModal.swift in Sources */,
+				7ADFBC8B2811278B00D3E734 /* UsefulCode.swift in Sources */,
 				7ABC85D42804652600E329B7 /* HomeListView.swift in Sources */,
 				7ABC85CA28045AC700E329B7 /* NavigationBar.swift in Sources */,
 				18C57C8E27EB456500F2AA77 /* Employee.swift in Sources */,

@@ -7,6 +7,51 @@
 
 import SwiftUI
 
+struct HorizontalList: View {
+    
+    @State var   viewModal: LiveTVViewModal
+    let margin: CGFloat = 8
+    @State var selectedItem: LiveTVModal
+    
+    var body: some View {
+        ScrollView(.horizontal) {
+            HStack {
+                ForEach(viewModal.lists,id:\.id) {  item in
+                    Button(action: {
+                       selectedItem = item
+                        resetValue()
+                    }, label: {
+                        VStack {
+                            Text(item.title)
+                                .padding(4)
+                                .background(Color.black)
+                                .foregroundColor(Color.white)
+                            if item.id == selectedItem.id {
+                                Divider()
+                                    .frame(height:5)
+                                    .background(Color.red)
+                            }
+                            Spacer()
+                        }
+                        .padding(margin)
+                    })
+                }
+            }
+        }
+    }
+    private func  resetValue(){
+        selectedItem.selected = false
+        for var item in viewModal.lists {
+            item.selected = false
+            if item.id == selectedItem.id {
+                item.selected = true
+                selectedItem.selected = true
+            }
+        }
+    }
+    
+}
+
 struct CustomSegmentControlView: View {
     
     @ObservedObject var viewModal: LiveTVViewModal

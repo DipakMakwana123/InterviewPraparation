@@ -9,59 +9,32 @@ import SwiftUI
 
 class LiveTVHostingVC: UIHostingController<LiveTVView> {
     
-//    override func viewDidLoad() {
-//        self.title = "12212121212"
-//        self.tabBarController?.tabBar.isHidden = true
-//    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
-
-
 struct LiveTVView: View {
     
     @ObservedObject private var viewModal =  LiveTVViewModal()
     @State var selectedItem: LiveTVModal
-    
+    let margin: CGFloat = 8
 
     var body: some View {
        
             VStack {
-               // CustomSegmentControlView(viewModal: viewModal, selectedItem: LiveTVModal(selected: false))
-                ScrollView(.horizontal) {
-                    HStack {
-                        ForEach(viewModal.lists,id:\.id) {  item in
-        
-                           // TextCell(item: selectedItem, selectedItem: selectedItem, lists: viewModal.lists)
-                            Button(action: {
-                               // item.selected = true
-                                selectedItem = item
-
-                                resetValue()
-
-                            }, label: {
-                                VStack {
-                                    Text(item.title)
-                                        .padding(4)
-                                        .background(Color.black)
-                                        .foregroundColor(Color.white)
-                                    if item.id == selectedItem.id {
-                                        Divider()
-                                            .frame(height:5)
-                                            .background(Color.red)
-                                    }
-                                    Spacer()
-                                }
-                                .padding(8)
-                            })
-//                                .onAppear{
-//                                    selectedItem = item
-//                                }
-                        }
-                    }
+                
+                HorizontalList(viewModal: viewModal, selectedItem: selectedItem)
+                    .padding(margin)
+                    .frame( height: 50)
+                
+                List(viewModal.lists) { item in
+                    Text(item.title)
                 }
-                Spacer()
+                .listStyle(DefaultListStyle())
+                
+                //Spacer()
             }
-           // .environment(viewModal)
-            .navigationBarTitle("New Navigation Title")
+            .navigationBarTitle("Live TV")
     }
     
     private func  resetValue(){
@@ -77,6 +50,8 @@ struct LiveTVView: View {
     
 
 }
+
+
 
 //struct LiveTVView_Previews: PreviewProvider {
 //    static var previews: some View {
