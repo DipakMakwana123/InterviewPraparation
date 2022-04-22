@@ -148,7 +148,7 @@ extension UIViewController{
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     func navigateToSwiftUI_LiveTVView(){
-        let viewController = LiveTVHostingVC(rootView: LiveTVView(selectedItem: LiveTVModal(selected: false)))
+        let viewController = LiveTVHostingVC(rootView: LiveTVView(selectedItem: LiveTVModal(title: "", selected: false)))
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

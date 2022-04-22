@@ -15,12 +15,10 @@ class LiveTVHostingVC: UIHostingController<LiveTVView> {
 struct LiveTVView: View {
     
     @ObservedObject private var viewModal =  LiveTVViewModal()
-    @State var selectedItem: LiveTVModal
-    @State var selectedSection: LiveTVModal?
+    @State var selectedItem: LiveTVModal?
+  //  @State var selectedSection: LiveTVModal?
     let margin: CGFloat = 8
-   // @State var sliderValue: CGFloat = 0.7
-    
-   // let listData: [ItemData] = [.FirstData, .SecondData, .ThirdData]
+  
     
     var body: some View {
        
@@ -31,29 +29,27 @@ struct LiveTVView: View {
                 ScrollView() {
                         ForEach(viewModal.lists,id:\.id) { item in
                             Button(action: {
-                                
-                                if selectedSection == nil {
-                                    selectedSection = item
-                                    selectedSection?.selected = true
-                                }else {
-                                    selectedSection = nil
-                                }
-                              
-                                
-                                
-                              //  resetValue()
-                                
+                                selectedItem = selectedItem == nil ? item : nil
+
                             }, label: {
                                 VStack {
                                     HStack {
-                                        SectionHeaderWithArrow(strTitle: item.title)
-                                            .padding(margin)
+                                        
+                                        if let selectedItem = selectedItem , selectedItem.id == item.id {
+                                            SectionHeaderWithArrow(str: item.title, isChangeImage: true)
+                                                .padding(margin)
+                                        }
+                                        else {
+                                            SectionHeaderWithArrow(str: item.title, isChangeImage: false)
+                                                .padding(margin)
+                                        }
+                                        
                                         Spacer()
                                     }
                                     Divider()
                                  }
-                            })
-                            if let selectedItem = selectedSection,selectedItem.id == item.id,selectedItem.selected,let list = selectedItem.subItems   {
+                            }).buttonStyle(PlainButtonStyle())
+                            if let selectedItem = selectedItem,selectedItem.id == item.id,let list = selectedItem.subItems   {
                                     
                                     ForEach(list) { subItem in
                                         VStack {
@@ -70,8 +66,10 @@ struct LiveTVView: View {
                                                 TextLabel(strTitle: subItem.title)
                                                         .padding(margin/2)
                                                 PlayerProgressView()
+                                                    
                                                 PlayerView()
-                                                TextLabel(strTitle: "Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum")
+                                                    .padding(margin/2)
+                                                TextLabel(strTitle: subItem.description)
                                                     .padding(margin)
                                             }
                                         }
@@ -89,15 +87,25 @@ struct LiveTVView: View {
     }
     
     private func  resetValue(){
-        selectedItem.selected = false
+        selectedItem?.selected = false
         for var item in viewModal.lists {
             item.selected = false
-            if item.id == selectedItem.id {
+            if  let selected = selectedItem , item.id == selected.id {
                 item.selected = true
-                selectedItem.selected = true
+                selectedItem?.selected = true
             }
         }
     }
+//    private func  resetValue(){
+//        selectedItem.selected = false
+//        for var item in viewModal.lists {
+//            item.selected = false
+//            if item.id == selectedItem.id {
+//                item.selected = true
+//                selectedItem.selected = true
+//            }
+//        }
+//    }
     
 
 }

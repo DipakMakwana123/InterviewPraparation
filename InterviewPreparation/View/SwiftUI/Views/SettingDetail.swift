@@ -53,20 +53,28 @@ struct TextLabel: View {
 }
 struct SectionHeaderWithArrow: View {
     
-    var strTitle: String
+    var str: String
+    var isChangeImage: Bool
+//    var selectedItem: LiveTVModal?
+//    @State var item: LiveTVModal
     
     var body: some View {
         HStack {
-            Text(strTitle)
+            Text(str)
                 .foregroundColor(Color.black)
                 .font(.system(size: 14, weight: .bold, design: .default))
             Spacer()
-                Button(action: {
-                    
-                }, label: {
-                    Image(systemName: "arrow.down.circle.fill")
-                        .foregroundColor(.black)
-                })
+            
+            if isChangeImage  {
+                Image(systemName: "arrow.up")
+                .foregroundColor(.black)
+            }
+            else {
+                Image(systemName: "arrow.down")
+                .foregroundColor(.black)
+            }
+            
+               
         }
     }
 }

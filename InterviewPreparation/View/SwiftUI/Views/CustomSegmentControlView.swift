@@ -11,7 +11,7 @@ struct HorizontalList: View {
     
     @State var   viewModal: LiveTVViewModal
     let margin: CGFloat = 8
-    @State var selectedItem: LiveTVModal
+    @State var selectedItem: LiveTVModal?
     
     var body: some View {
         ScrollView(.horizontal) {
@@ -26,26 +26,26 @@ struct HorizontalList: View {
                                 .padding(4)
                                 .background(Color.black)
                                 .foregroundColor(Color.white)
-                            if item.id == selectedItem.id {
-                                    Divider()
+                            if let selectedItem  = selectedItem,item.id == selectedItem.id {
+                                        Divider()
                                     .frame(height:5)
                                     .background(Color.red)
                             }
                             Spacer()
                         }
                         .padding(margin)
-                    })
+                    }).buttonStyle(PlainButtonStyle())
                 }
             }
         }
     }
     private func  resetValue(){
-        selectedItem.selected = false
+        selectedItem?.selected = false
         for var item in viewModal.lists {
             item.selected = false
-            if item.id == selectedItem.id {
+            if let selected = selectedItem, item.id == selected.id {
                 item.selected = true
-                selectedItem.selected = true
+                selectedItem?.selected = true
             }
         }
     }
