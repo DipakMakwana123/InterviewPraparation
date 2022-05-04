@@ -63,21 +63,14 @@ struct CustomSegmentControlView: View {
             HStack {
                 ForEach(viewModal.lists,id:\.id) {  item in
                         TextCell(item: selectedItem, selectedItem: selectedItem, lists: viewModal.lists)
-                        
                     .onAppear{
                         selectedItem = item
                     }
                 }
-                
             }
         }
     }
     private func  resetValue(selectedItem: LiveTVModal){
-        
-        //viewModal.lists.filter({$0.id == selectedItem.id}).map({$0.selected = true})
-
-        
-        //let _ = viewModal.lists.map({return $0.selected = $0.id == selectedItem.id ? true : false})
         for var item in viewModal.lists {
             item.selected = false
             if item.id == selectedItem.id {
@@ -87,12 +80,6 @@ struct CustomSegmentControlView: View {
         }
     }
 }
-
-//struct CustomSegmentControlView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CustomSegmentControlView(lists: [LiveTVModal]())
-//    }
-//}
 
 struct TextCell: View {
    
@@ -107,9 +94,7 @@ struct TextCell: View {
     var body: some View {
         
         Button(action: {
-           // item.selected = true
             selectedItem = item
-
             resetValue()
 
         }, label: {
@@ -127,9 +112,6 @@ struct TextCell: View {
             }
             .padding(margin)
         })
-//            .onAppear{
-//                selectedItem = item
-//            }
     }
     private func  resetValue(){
         selectedItem.selected = false
@@ -141,6 +123,4 @@ struct TextCell: View {
             }
         }
     }
-    
-    
 }

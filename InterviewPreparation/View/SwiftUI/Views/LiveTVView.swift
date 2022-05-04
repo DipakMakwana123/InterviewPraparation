@@ -16,7 +16,6 @@ struct LiveTVView: View {
     
     @ObservedObject private var viewModal =  LiveTVViewModal()
     @State var selectedItem: LiveTVModal?
-  //  @State var selectedSection: LiveTVModal?
     let margin: CGFloat = 8
   
     
@@ -28,13 +27,12 @@ struct LiveTVView: View {
                
                 ScrollView() {
                         ForEach(viewModal.lists,id:\.id) { item in
+                            
                             Button(action: {
                                 selectedItem = selectedItem == nil ? item : nil
-
                             }, label: {
                                 VStack {
                                     HStack {
-                                        
                                         if let selectedItem = selectedItem , selectedItem.id == item.id {
                                             SectionHeaderWithArrow(str: item.title, isChangeImage: true)
                                                 .padding(margin)
@@ -43,9 +41,9 @@ struct LiveTVView: View {
                                             SectionHeaderWithArrow(str: item.title, isChangeImage: false)
                                                 .padding(margin)
                                         }
-                                        
                                         Spacer()
                                     }
+                                    
                                     Divider()
                                  }
                             }).buttonStyle(PlainButtonStyle())
@@ -66,9 +64,12 @@ struct LiveTVView: View {
                                                 TextLabel(strTitle: subItem.title)
                                                         .padding(margin/2)
                                                 PlayerProgressView()
-                                                    
-                                                PlayerView()
-                                                    .padding(margin/2)
+                                                if let url = URL(string: subItem.videoURL) {
+                                                    VideoPlayerView(videoURL: url)
+                                                        .padding(margin/2)
+                                                        
+                                                }
+                                               
                                                 TextLabel(strTitle: subItem.description)
                                                     .padding(margin)
                                             }
@@ -79,8 +80,7 @@ struct LiveTVView: View {
                                     .accentColor(Color.white)
                                 }
                         }
-                        
-                        }
+                    }
                 }
             }
             .navigationBarTitle("Live TV")
@@ -96,18 +96,6 @@ struct LiveTVView: View {
             }
         }
     }
-//    private func  resetValue(){
-//        selectedItem.selected = false
-//        for var item in viewModal.lists {
-//            item.selected = false
-//            if item.id == selectedItem.id {
-//                item.selected = true
-//                selectedItem.selected = true
-//            }
-//        }
-//    }
-    
-
 }
 
 struct CellView: View {
@@ -115,27 +103,24 @@ struct CellView: View {
     
     var body: some View {
         HStack {
-           // Image.init(uiImage: item.image)
             Text(item.name)
         }
     }
 }
-struct PlayerView: View {
-    var body: some View {
-        Rectangle()
-            .fill()
-            .foregroundColor(Color.white)
-            .cornerRadius(10)
-            .frame(height: 150)
-            
-    }
-}
+//struct PlayerView: View {
+//    var body: some View {
+//        Rectangle()
+//            .fill()
+//            .foregroundColor(Color.white)
+//            .cornerRadius(10)
+//            .frame(height: 150)
+//    }
+//}
 
 struct PlayerProgressView: View{
     var body: some View {
         ProgressView("",value:0.7,total:1.0)
             .accentColor(Color.blue)
-            
     }
 }
 struct LogoImageView: View {
@@ -149,9 +134,3 @@ struct LogoImageView: View {
         }
     }
 }
-
-//struct LiveTVView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        LiveTVView(navigationContoller: UINavigationController())
-//    }
-//}

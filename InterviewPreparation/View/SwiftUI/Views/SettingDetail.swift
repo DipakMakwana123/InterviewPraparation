@@ -55,8 +55,6 @@ struct SectionHeaderWithArrow: View {
     
     var str: String
     var isChangeImage: Bool
-//    var selectedItem: LiveTVModal?
-//    @State var item: LiveTVModal
     
     var body: some View {
         HStack {
@@ -64,23 +62,9 @@ struct SectionHeaderWithArrow: View {
                 .foregroundColor(Color.black)
                 .font(.system(size: 14, weight: .bold, design: .default))
             Spacer()
-            
-            if isChangeImage  {
-                Image(systemName: "arrow.up")
+
+            Image(systemName: isChangeImage ? "arrow.up" : "arrow.down")
                 .foregroundColor(.black)
-            }
-            else {
-                Image(systemName: "arrow.down")
-                .foregroundColor(.black)
-            }
-            
-               
         }
     }
 }
-
-//struct SettingDetail_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SettingDetail()
-//    }
-//}

@@ -89,6 +89,9 @@ extension ViewController: UITableViewDelegate{
         }else if obj.id == .compositionalLayout {
             self.navigateToCompositionalLayout()
         }
+        else if obj.id == .viper {
+            self.navigateViperVCV()
+        }
         else if obj.id == .tableViewCollectionView   { // SwiftUI
             self.navigateToSwiftUI_TableCollectionView()
         }
@@ -104,6 +107,9 @@ extension ViewController: UITableViewDelegate{
         else if  obj.id == .liveTV  { // SwiftUI
             self.navigateToSwiftUI_LiveTVView()
         }
+        else if  obj.id == .designViaCode  { // SwiftUI
+            self.navigateToDesignViaCodeVC()
+        }
     }
 }
 
@@ -117,16 +123,22 @@ extension UIViewController{
         let viewController = CombineViewController(nibName: "CombineViewController",bundle:nil)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
+    func navigateToDesignViaCodeVC(){
+        let viewController = DesignViaCodeViewController(nibName: "DesignViaCodeViewController",bundle:nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
     func navigateToCompositionalLayout(){
         let viewController = CompositionViewController(nibName: "CompositionViewController",bundle:nil)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
-    
     func navigateToRxSwiftVC(){
         let viewController = RxSwiftViewController(nibName: "RxSwiftViewController",bundle:nil)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
-    
+    func navigateViperVCV(){
+        let viewController = ViperViewController(nibName: "ViperViewController",bundle:nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 
 //// SWift UI Navigation
@@ -148,7 +160,7 @@ extension UIViewController{
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     func navigateToSwiftUI_LiveTVView(){
-        let viewController = LiveTVHostingVC(rootView: LiveTVView(selectedItem: LiveTVModal(title: "", selected: false)))
+        let viewController = LiveTVHostingVC(rootView: LiveTVView(selectedItem: nil))
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

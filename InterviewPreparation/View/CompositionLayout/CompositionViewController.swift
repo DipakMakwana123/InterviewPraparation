@@ -21,6 +21,8 @@ class CompositionViewController: UIViewController {
     private func configureCollectionView(){
         guard let collectionView = collectionView else {return}
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.register(UINib(nibName: "PlayerCollectionCell", bundle: .main), forCellWithReuseIdentifier: "PlayerCollectionCell")
+        
         collectionView.register(MyHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header")
         collectionView.collectionViewLayout = setLayout()
         collectionView.dataSource = self
@@ -71,7 +73,8 @@ extension CompositionViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlayerCollectionCell", for: indexPath) as? PlayerCollectionCell else {return UICollectionViewCell()}
+        
         cell.backgroundColor = UIColor.random()
         return cell
     }
@@ -105,7 +108,10 @@ extension CompositionViewController: UICollectionViewDataSource {
     
 }
 extension CompositionViewController: UICollectionViewDelegateFlowLayout {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) as? PlayerCollectionCell else {return}
+        cell.prepareVideo()
+    }
 }
 
 extension UIColor {
@@ -145,3 +151,5 @@ class MyHeader: UICollectionReusableView {
         titleLabel.frame.origin = CGPoint(x: 15, y: 10)
     }
 }
+
+
