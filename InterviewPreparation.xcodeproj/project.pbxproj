@@ -87,6 +87,8 @@
 		7ADFBCAE282274CF00D3E734 /* DesignViaCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ADFBCAC282274CF00D3E734 /* DesignViaCodeViewController.xib */; };
 		7ADFBCB02822759600D3E734 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBCAF2822759600D3E734 /* LoginView.swift */; };
 		7ADFBCB22823A09700D3E734 /* ViaCodeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBCB12823A09700D3E734 /* ViaCodeCollectionViewController.swift */; };
+		7ADFBCB42823B8A200D3E734 /* TableCollectionViewControllerViaCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBCB32823B8A200D3E734 /* TableCollectionViewControllerViaCode.swift */; };
+		7ADFBCB62823D29900D3E734 /* MovieCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBCB52823D29900D3E734 /* MovieCollectionCell.swift */; };
 		C2A10A4C4537A231FCBD897B /* Pods_InterviewPreparation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A271010558C3BDC9C1423D /* Pods_InterviewPreparation.framework */; };
 		F4C197FDB0E7BDAF7662FD83 /* Pods_InterviewPreparationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A39F592E89D4EC32087DE66 /* Pods_InterviewPreparationTests.framework */; };
 /* End PBXBuildFile section */
@@ -198,6 +200,8 @@
 		7ADFBCAC282274CF00D3E734 /* DesignViaCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DesignViaCodeViewController.xib; sourceTree = "<group>"; };
 		7ADFBCAF2822759600D3E734 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7ADFBCB12823A09700D3E734 /* ViaCodeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaCodeCollectionViewController.swift; sourceTree = "<group>"; };
+		7ADFBCB32823B8A200D3E734 /* TableCollectionViewControllerViaCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCollectionViewControllerViaCode.swift; sourceTree = "<group>"; };
+		7ADFBCB52823D29900D3E734 /* MovieCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionCell.swift; sourceTree = "<group>"; };
 		85A4726A115E44E24C15448D /* Pods-InterviewPreparationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewPreparationTests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewPreparationTests/Pods-InterviewPreparationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C67BE237BEB030B48C1E11C2 /* Pods_InterviewPreparation_InterviewPreparationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewPreparation_InterviewPreparationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -489,6 +493,8 @@
 				7ADFBCAC282274CF00D3E734 /* DesignViaCodeViewController.xib */,
 				7ADFBCAF2822759600D3E734 /* LoginView.swift */,
 				7ADFBCB12823A09700D3E734 /* ViaCodeCollectionViewController.swift */,
+				7ADFBCB32823B8A200D3E734 /* TableCollectionViewControllerViaCode.swift */,
+				7ADFBCB52823D29900D3E734 /* MovieCollectionCell.swift */,
 			);
 			path = DesignViaCode;
 			sourceTree = "<group>";
@@ -727,6 +733,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADFBCB62823D29900D3E734 /* MovieCollectionCell.swift in Sources */,
 				7ADFBC8D28112E1000D3E734 /* ItemData.swift in Sources */,
 				7ADFBC962812BF2400D3E734 /* PlayerCollectionCell.swift in Sources */,
 				7ADFBC7A280E9D6200D3E734 /* SettingDetailViewModal.swift in Sources */,
@@ -778,6 +785,7 @@
 				7ABC85D2280464D300E329B7 /* AsyncImageView.swift in Sources */,
 				7ABC85D62804658C00E329B7 /* HomeViewModal.swift in Sources */,
 				18C57C4127EB1A7800F2AA77 /* AppDelegate.swift in Sources */,
+				7ADFBCB42823B8A200D3E734 /* TableCollectionViewControllerViaCode.swift in Sources */,
 				7ABC85E52804686000E329B7 /* APIConstant.swift in Sources */,
 				7ADFBC78280E926F00D3E734 /* FormView.swift in Sources */,
 				18AA864D27F4389B0069610E /* CombineViewModal.swift in Sources */,

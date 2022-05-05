@@ -25,6 +25,7 @@ class FirstViewModal {
         Course(id: .tableViewCollectionView, name: "TableView + CollectionView"),
         Course(id: .designViaCode, name: "Design Via Code"),
         Course(id: .designCollectionViewViaCode, name: "Design CollectionView Via Code"),
+        Course(id: .designTableCollectionViewViaCode, name: "Design Table-CollectionView Via Code"),
         Course(id: .liveTV, name: "Live TV"),
         Course(id: .operationQueue, name: "Operation Queue"),
         Course(id: .gcd, name: "GCD"),
@@ -81,6 +82,7 @@ enum QuestionType: Int {
     case liveTV
     case designViaCode
     case designCollectionViewViaCode
+    case designTableCollectionViewViaCode
 }
 
 

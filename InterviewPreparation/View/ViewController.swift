@@ -114,6 +114,9 @@ extension ViewController: UITableViewDelegate{
         else if  obj.id == .designCollectionViewViaCode  {
             self.navigateToDesignCollectionViewViaCode()
         }
+        else if obj.id == .designTableCollectionViewViaCode {
+            navigateToTableCollectionViewViaCode()
+        }
     }
 }
 
@@ -145,6 +148,10 @@ extension UIViewController{
     }
     func navigateToDesignCollectionViewViaCode(){
         let viewController = ViaCodeCollectionViewController()
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    func navigateToTableCollectionViewViaCode(){
+        let viewController = TableCollectionViewControllerViaCode()
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
