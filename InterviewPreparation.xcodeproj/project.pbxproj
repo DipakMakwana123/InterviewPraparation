@@ -86,6 +86,7 @@
 		7ADFBCAD282274CF00D3E734 /* DesignViaCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBCAB282274CF00D3E734 /* DesignViaCodeViewController.swift */; };
 		7ADFBCAE282274CF00D3E734 /* DesignViaCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ADFBCAC282274CF00D3E734 /* DesignViaCodeViewController.xib */; };
 		7ADFBCB02822759600D3E734 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBCAF2822759600D3E734 /* LoginView.swift */; };
+		7ADFBCB22823A09700D3E734 /* ViaCodeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBCB12823A09700D3E734 /* ViaCodeCollectionViewController.swift */; };
 		C2A10A4C4537A231FCBD897B /* Pods_InterviewPreparation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A271010558C3BDC9C1423D /* Pods_InterviewPreparation.framework */; };
 		F4C197FDB0E7BDAF7662FD83 /* Pods_InterviewPreparationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A39F592E89D4EC32087DE66 /* Pods_InterviewPreparationTests.framework */; };
 /* End PBXBuildFile section */
@@ -196,6 +197,7 @@
 		7ADFBCAB282274CF00D3E734 /* DesignViaCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignViaCodeViewController.swift; sourceTree = "<group>"; };
 		7ADFBCAC282274CF00D3E734 /* DesignViaCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DesignViaCodeViewController.xib; sourceTree = "<group>"; };
 		7ADFBCAF2822759600D3E734 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7ADFBCB12823A09700D3E734 /* ViaCodeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaCodeCollectionViewController.swift; sourceTree = "<group>"; };
 		85A4726A115E44E24C15448D /* Pods-InterviewPreparationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewPreparationTests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewPreparationTests/Pods-InterviewPreparationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C67BE237BEB030B48C1E11C2 /* Pods_InterviewPreparation_InterviewPreparationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewPreparation_InterviewPreparationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -486,6 +488,7 @@
 				7ADFBCAB282274CF00D3E734 /* DesignViaCodeViewController.swift */,
 				7ADFBCAC282274CF00D3E734 /* DesignViaCodeViewController.xib */,
 				7ADFBCAF2822759600D3E734 /* LoginView.swift */,
+				7ADFBCB12823A09700D3E734 /* ViaCodeCollectionViewController.swift */,
 			);
 			path = DesignViaCode;
 			sourceTree = "<group>";
@@ -730,6 +733,7 @@
 				7ADFBC83280FD41000D3E734 /* LiveTVView.swift in Sources */,
 				7ABC8610280D3A6B00E329B7 /* RxSwiftViewModal.swift in Sources */,
 				1863ABA727EC233000575DEC /* ErrorMessages.swift in Sources */,
+				7ADFBCB22823A09700D3E734 /* ViaCodeCollectionViewController.swift in Sources */,
 				7ADFBCA62816BDEB00D3E734 /* Interactor.swift in Sources */,
 				7ADFBC7D280EC6CB00D3E734 /* SettingToggleView.swift in Sources */,
 				7ABC85CE2804645E00E329B7 /* HorizontalCell.swift in Sources */,

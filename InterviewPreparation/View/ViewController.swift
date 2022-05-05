@@ -90,7 +90,7 @@ extension ViewController: UITableViewDelegate{
             self.navigateToCompositionalLayout()
         }
         else if obj.id == .viper {
-            self.navigateViperVCV()
+            self.navigateViperVC()
         }
         else if obj.id == .tableViewCollectionView   { // SwiftUI
             self.navigateToSwiftUI_TableCollectionView()
@@ -107,8 +107,12 @@ extension ViewController: UITableViewDelegate{
         else if  obj.id == .liveTV  { // SwiftUI
             self.navigateToSwiftUI_LiveTVView()
         }
-        else if  obj.id == .designViaCode  { // SwiftUI
+        else if  obj.id == .designViaCode  {
             self.navigateToDesignViaCodeVC()
+        }
+        
+        else if  obj.id == .designCollectionViewViaCode  {
+            self.navigateToDesignCollectionViewViaCode()
         }
     }
 }
@@ -135,8 +139,12 @@ extension UIViewController{
         let viewController = RxSwiftViewController(nibName: "RxSwiftViewController",bundle:nil)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
-    func navigateViperVCV(){
+    func navigateViperVC(){
         let viewController = ViperViewController(nibName: "ViperViewController",bundle:nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    func navigateToDesignCollectionViewViaCode(){
+        let viewController = ViaCodeCollectionViewController()
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
