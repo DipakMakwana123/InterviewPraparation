@@ -71,7 +71,7 @@ class PlayerCollectionCell: UICollectionViewCell {
         
                 guard let self = self else {return}
         
-                if let image1 = image {
+                if let _ = image {
                    // self.thumbImage.image = image1
                     self.thumbImage.image = UIImage(named: "sample-logo")
                 }

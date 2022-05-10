@@ -20,7 +20,7 @@ class TableCollectionViewController: UIViewController {
         configureTableView()
     }
     private func configureTableView(){
-        guard let tableView = self.tableView else {return}
+        guard let _ = self.tableView else {return}
        // tableView.configure(dataSource: self, delegate: self)
         
     }

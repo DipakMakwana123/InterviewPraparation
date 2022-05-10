@@ -8,12 +8,12 @@
 import UIKit
 
 class DSAViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       // findIndexFromArray(arr:[3,4,5,6,7,9],targetVal: 11)
+        // findIndexFromArray(arr:[3,4,5,6,7,9],targetVal: 11)
         //findIndexFromArray(arr:[3,4,5,6,7,9],targetVal: 16)
-       // let result = findIndexFromArray(arr:[3,4,-5,6,7,9],targetVal: -1)
+        // let result = findIndexFromArray(arr:[3,4,-5,6,7,9],targetVal: -1)
         let result = findIndexFromArray(arr:[3,4,-5,6,7,9],targetVal: 3)
         debugPrint(result)
         if result.isEmpty {
@@ -55,8 +55,8 @@ class DSAViewController: UIViewController {
     
     private func sortedArr(arr:inout [Int]){
         var maxValue = 0
-       // var resultArr = arr
-        for (index,num) in arr.enumerated() {
+        // var resultArr = arr
+        for (_,num) in arr.enumerated() {
             //maxValue = num
             if num > maxValue {
                 maxValue = num
@@ -72,7 +72,7 @@ class DSAViewController: UIViewController {
         var fiboArr: [Int] = [Int]()
         var val1 = 0
         var total = 1
-       
+        
         for _ in 0...num {
             fiboArr.append(total)
             let temp = val1
@@ -89,74 +89,103 @@ enum MathError : Error {
 }
 
 class DivideTwoNumber {
-
+    
     /*
      func divide(dividend: Int, divisor: Int) throws -> Int  {
-
-         if(dividend == 0){
-             return 0
-         }
-
-         if(divisor == 0){
-             throw MathError.divideByZero
-         }
-
-         let isNegative = (dividend < 0) || (divisor < 0)
-         var quotient = 0
-         var tempDivident = convertToPositiveInteger(value: dividend)
-         let tempDivisor = convertToPositiveInteger(value: divisor)
-
-         while tempDivident >= tempDivisor {
-             tempDivident = tempDivident - tempDivisor
-             quotient = quotient + 1
-         }
-
-         if(isDividentAndDivisorBothNegative(dividend: dividend, divisor: divisor)){
-             return quotient
-         }
-
-         return isNegative ? -quotient : quotient
+     
+     if(dividend == 0){
+     return 0
+     }
+     
+     if(divisor == 0){
+     throw MathError.divideByZero
+     }
+     
+     let isNegative = (dividend < 0) || (divisor < 0)
+     var quotient = 0
+     var tempDivident = convertToPositiveInteger(value: dividend)
+     let tempDivisor = convertToPositiveInteger(value: divisor)
+     
+     while tempDivident >= tempDivisor {
+     tempDivident = tempDivident - tempDivisor
+     quotient = quotient + 1
+     }
+     
+     if(isDividentAndDivisorBothNegative(dividend: dividend, divisor: divisor)){
+     return quotient
+     }
+     
+     return isNegative ? -quotient : quotient
      }
      */
     
     
     func divide(dividend: Int, divisor: Int) throws -> Int  {
-
+        
         if(dividend == 0){
             return 0
         }
-
+        
         if(divisor == 0){
             throw MathError.divideByZero
         }
-
+        
         let isNegative = (dividend < 0) || (divisor < 0)
         var quotient = 0
         var tempDivident = abs(dividend)//convertToPositiveInteger(value: dividend)
         let tempDivisor = abs(divisor)//convertToPositiveInteger(value: divisor)
-
+        
         while tempDivident >= tempDivisor {
             tempDivident = tempDivident - tempDivisor
             quotient = quotient + 1
         }
-
+        
         if(isDividentAndDivisorBothNegative(dividend: dividend, divisor: divisor)){
             return quotient
         }
-
+        
         return isNegative ? -quotient : quotient
     }
-
+    
     private func convertToPositiveInteger(value: Int) -> Int {
         return value < 0 ? value * -1 : value
     }
-
+    
     private func isDividentAndDivisorBothNegative(dividend: Int, divisor: Int) -> Bool{
         return (dividend < 0) && (divisor < 0)
     }
 }
 
 class Sorting {
+    
+    func quickSort<T:Comparable>(arr:[T]) -> [T] {
+        
+        var lessThanArr = [T]()
+        var greaterThanArr = [T]()
+        var equalArr = [T]()
+        //var pivot = 0
+        
+        if arr.count > 1 {
+            let pivot = arr[arr.count/2]
+            for num in arr  {
+                 if num > pivot {
+                    greaterThanArr.append(num)
+                }
+                else if num < pivot {
+                    lessThanArr.append(num)
+                }
+                else {
+                    equalArr.append(num)
+                }
+                
+            }
+            return quickSort(arr: lessThanArr) + equalArr + quickSort(arr: greaterThanArr)
+        }
+        
+       
+        
+        return arr
+    }
     
     func sortArr<T:Comparable>(arr:[T]) -> [T] {
         var tempArr = arr
@@ -167,7 +196,7 @@ class Sorting {
         return resultArr
     }
     private func findMinValue<T:
-    Comparable>(arr:inout[T],resultArr: inout[T]) -> [T]{
+                                    Comparable>(arr:inout[T],resultArr: inout[T]) -> [T]{
         if arr.isEmpty {
             return []
         }
@@ -183,12 +212,88 @@ class Sorting {
         if arr.count > minNumberIndex {
             arr.remove(at: minNumberIndex)
         }
+        debugPrint(resultArr)
         return resultArr
     }
 }
 class SearchAlgoritham {
     
-    func binarySearch(arr:inout [Int]){
+    func binarySearch<T:Comparable>(arr: [T],searchVal:T) -> Bool {
         
+        guard !arr.isEmpty else {return false}
+        var midIndex = 0
+        let sortingClass = Sorting()
+        let resultArr = sortingClass.sortArr(arr: arr)
+        midIndex = resultArr.count / 2
+        var isAvailable = checkValue(arr: resultArr, endIndex: midIndex, searchVal: searchVal)
+        if !isAvailable {
+            isAvailable = checkValue(arr: resultArr, endIndex: resultArr.count - 1, searchVal: searchVal)
+            return isAvailable
+        }
+        else {
+            return isAvailable
+        }
+    }
+    private func checkValue<T:Comparable>(arr:[T],endIndex:Int,searchVal:T) -> Bool{
+        for ind in 0...endIndex {
+            if arr[ind] == searchVal {
+                return true
+            }
+        }
+        return false
+    }
+}
+
+class Algoritham {
+    
+    func secondLargestNumber(arr:[Int]) -> Int{
+        guard  !arr.isEmpty else {return -1}
+        var largestNum = 0
+        var secondLargest = 0
+        
+        for num in arr {
+            if num > largestNum {
+                secondLargest = largestNum
+                largestNum = num
+            }else if num > secondLargest {
+                secondLargest = num
+            }
+        }
+        return secondLargest
+    }
+    func secondLargestNumberFromString(str:String) -> Int{
+        
+        var numberArr:[Int] = [Int]()
+        for char in str {
+            if char.isNumber , let number = Int(String(char)) {
+                numberArr.append(number)
+            }
+        }
+        return secondLargestNumber(arr: numberArr)
+    }
+    
+    func checkStringWeatherItHasPairBrackets(str:String) -> Bool{
+        
+        guard str.count % 2 == 0 else {return false }
+        var stackArray = [String]()
+        
+        let  validBrackets = ["{":"}","[":"]","(":")"]
+        debugPrint(validBrackets.values)
+        for char in str {
+            if validBrackets.keys.contains(String(char)){
+                stackArray.append(String(char))
+            }
+            else if  validBrackets.values.contains(String(char)){
+                
+                if let lastChar = stackArray.last,  lastChar == String(char) {
+                    stackArray.removeLast()
+                }
+            }
+        }
+        debugPrint(stackArray)
+        return stackArray.isEmpty ? true : false
+        
+        
+       
     }
 }
