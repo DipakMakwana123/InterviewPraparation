@@ -37,6 +37,12 @@ extension UICollectionView {
         layout.minimumLineSpacing = 0
         self.collectionViewLayout = layout
     }
-    
+    func horizontalLayout(){
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: Constant.margin20, left: Constant.margin8, bottom: Constant.margin8, right: Constant.margin8)
+        layout.itemSize = CGSize(width: (UIScreen.main.bounds.width / 3) - (2*Constant.margin8)  , height: 200)
+        layout.scrollDirection = .horizontal
+        self.collectionViewLayout = layout
+    }
     
 }

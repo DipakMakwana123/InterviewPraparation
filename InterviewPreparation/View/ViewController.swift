@@ -117,6 +117,13 @@ extension ViewController: UITableViewDelegate{
         else if obj.id == .designTableCollectionViewViaCode {
             navigateToTableCollectionViewViaCode()
         }
+        else if obj.id == .operationQueue {
+            navigateToOperationQueue()
+        }
+        else if obj.id == .dsa {
+            navigateToDSAVC()
+        }
+
     }
 }
 
@@ -154,6 +161,15 @@ extension UIViewController{
         let viewController = TableCollectionViewControllerViaCode()
         self.navigationController?.pushViewController(viewController, animated: true)
     }
+    func navigateToOperationQueue(){
+        let viewController = OperationQueueViewController()
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    func navigateToDSAVC(){
+        let viewController = DSAViewController()
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
 }
 
 //// SWift UI Navigation

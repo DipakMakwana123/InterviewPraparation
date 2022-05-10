@@ -33,7 +33,7 @@ class LoginView: UIView {
         let stackView = UIStackView()
         stackView.distribution = .fill
         stackView.alignment = .fill
-        stackView.spacing = Constant.margin40
+        stackView.spacing = Constant.margin30
         stackView.axis = .vertical
         return stackView
     }()
@@ -61,12 +61,15 @@ class LoginView: UIView {
         button.setTitle("Log In", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .systemBlue
+        button.layer.cornerRadius = Constant.margin8
         button.addTarget(self, action: #selector(buttonLogInClicked), for: .touchUpInside)
         return button
     }()
     private var btnForgotPassword: UIButton = {
         let button = UIButton(type: .system)
-        
+        button.contentHorizontalAlignment = .trailing
+        button.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
+
         let fullAttributedString = NSMutableAttributedString()
 
         var  attributedLinkString = NSMutableAttributedString(string: "Forgot Password?", attributes:[NSAttributedString.Key.foregroundColor: UIColor.gray,NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue])
@@ -117,7 +120,6 @@ class LoginView: UIView {
     
         let margin = Margin(top: Constant.margin20, leading: Constant.margin12, bottom: Constant.margin12, trailing: Constant.margin12)
         
-        
         stackView.configureWithTopMargin(superView: self,corespondingView:imageBackgroundView, margin: margin)
         
         addSubViewsInStackView()
@@ -142,6 +144,7 @@ class LoginView: UIView {
         
         txtUserName.heightAnchor.constraint(equalToConstant: Constant.margin40).isActive = true
         txtPassword.heightAnchor.constraint(equalToConstant: Constant.margin40).isActive = true
+        btnLogin.heightAnchor.constraint(equalToConstant: Constant.margin40).isActive = true
     }
     
 }
@@ -214,6 +217,7 @@ struct Constant {
     static let margin12: CGFloat = 12
     static let margin16: CGFloat = 16
     static let margin20: CGFloat = 20
+    static let margin30: CGFloat = 30
     static let margin40: CGFloat = 40
     
     

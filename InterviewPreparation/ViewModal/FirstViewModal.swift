@@ -33,6 +33,7 @@ class FirstViewModal {
         Course(id: .swiftUI, name: "SwiftUI"),
         Course(id: .uiKitSwiftUI, name: "UIKit to SwiftUI"),
         Course(id: .rxSwift, name: "RxSwift"),
+        Course(id: .dsa, name: "Data Stucture Algoritham"),
     ]
   //  let questionList: [String] = ["Compositional Layout","Combine","TV OS","Operation Queue","GCD","VIPER","SwiftUI","UIKit to SwiftUI"]
 
@@ -83,6 +84,7 @@ enum QuestionType: Int {
     case designViaCode
     case designCollectionViewViaCode
     case designTableCollectionViewViaCode
+    case dsa
 }
 
 

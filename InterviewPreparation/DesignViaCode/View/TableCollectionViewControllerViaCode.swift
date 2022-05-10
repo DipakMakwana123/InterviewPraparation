@@ -8,7 +8,7 @@
 import UIKit
 
 class TableCollectionViewControllerViaCode: UIViewController {
-
+    
     private var tableView: UITableView = {
         let tableView = UITableView()
         
@@ -22,7 +22,7 @@ class TableCollectionViewControllerViaCode: UIViewController {
         super.viewDidLoad()
         self.title = "Design Via Code"
         configureView()
-    
+        
     }
     
     private func configureView(){
@@ -53,7 +53,7 @@ extension TableCollectionViewControllerViaCode: UITableViewDataSource {
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200 
+        return 200
     }
 }
 extension TableCollectionViewControllerViaCode: UITableViewDelegate {
@@ -64,14 +64,8 @@ class MyTableViewCell: UITableViewCell {
     
     static let identifier = "cell"
     
-    private var collectionView: UICollectionView = {
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: Constant.margin20, left: Constant.margin8, bottom: Constant.margin8, right: Constant.margin8)
-        layout.itemSize = CGSize(width: (UIScreen.main.bounds.width / 3) - (2*Constant.margin8)  , height: 200)
-        layout.scrollDirection = .horizontal
-        let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
+    private var collectionView: HorizontalCollectionView = {
+        let collectionView = HorizontalCollectionView()
         collectionView.register(MovieCollectionViewCell.self, forCellWithReuseIdentifier: MovieCollectionViewCell.identifier)
         return collectionView
     }()
@@ -90,7 +84,7 @@ class MyTableViewCell: UITableViewCell {
     }
     
     private func connfigureCollectionView(){
-
+        
         self.contentView.addSubview(collectionView)
         collectionView.configureView(superView: self.contentView)
         collectionView.dataSource = self

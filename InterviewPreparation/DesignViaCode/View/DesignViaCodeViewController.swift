@@ -14,13 +14,10 @@ class DesignViaCodeViewController: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
     }
-    
-    
 }
 
 // MARK: Designing the View
