@@ -33,8 +33,7 @@
 		18C57C8827EB37B200F2AA77 /* EmployeeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C57C8627EB37B200F2AA77 /* EmployeeTableCell.swift */; };
 		18C57C8927EB37B200F2AA77 /* EmployeeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C57C8727EB37B200F2AA77 /* EmployeeTableCell.xib */; };
 		18C57C8E27EB456500F2AA77 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C57C8D27EB456500F2AA77 /* Employee.swift */; };
-		57FB885D050C7D5E2DBB7E77 /* Pods_LearningWithPOC_LearningWithPOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0CF55F988ED41E26EA685E /* Pods_LearningWithPOC_LearningWithPOCUITests.framework */; };
-		7A5A4A2C282A9D38001B07E8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18C57C6727EB1A7B00F2AA77 /* Info.plist */; };
+		73FBFB12918BE16530331F8B /* Pods_InterviewPreparation_InterviewPreparationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67BE237BEB030B48C1E11C2 /* Pods_InterviewPreparation_InterviewPreparationUITests.framework */; };
 		7A8E9BC2282A4041007CC790 /* SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E9BC1282A4041007CC790 /* SearchTests.swift */; };
 		7A8E9BC4282A6E62007CC790 /* AlgorithamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E9BC3282A6E62007CC790 /* AlgorithamTests.swift */; };
 		7A961F602828F4EE001CC552 /* DeviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A961F5F2828F4EE001CC552 /* DeviderTest.swift */; };
@@ -97,8 +96,8 @@
 		7ADFBCB82823E98C00D3E734 /* HorizontalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBCB72823E98C00D3E734 /* HorizontalCollectionView.swift */; };
 		7ADFBCBC2823ED9C00D3E734 /* OperationQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBCBB2823ED9C00D3E734 /* OperationQueueViewController.swift */; };
 		7ADFBCBF28254E3600D3E734 /* DSAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFBCBE28254E3600D3E734 /* DSAViewController.swift */; };
-		7DFED79FDDF7F54E3D74A87E /* Pods_LearningWithPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DE4202CF76E1367562E638 /* Pods_LearningWithPOC.framework */; };
-		D5F7D55873F802A5DFE3179F /* Pods_LearningWithPOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBC8249B9EDB69B8A942299 /* Pods_LearningWithPOCTests.framework */; };
+		C2A10A4C4537A231FCBD897B /* Pods_InterviewPreparation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A271010558C3BDC9C1423D /* Pods_InterviewPreparation.framework */; };
+		F4C197FDB0E7BDAF7662FD83 /* Pods_InterviewPreparationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A39F592E89D4EC32087DE66 /* Pods_InterviewPreparationTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +118,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A39F592E89D4EC32087DE66 /* Pods_InterviewPreparationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewPreparationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC37C7B65CDB1F6F4B7957B /* Pods-InterviewPreparationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewPreparationTests.release.xcconfig"; path = "Target Support Files/Pods-InterviewPreparationTests/Pods-InterviewPreparationTests.release.xcconfig"; sourceTree = "<group>"; };
 		154AE3E564384B1D564F0FC8 /* Pods-InterviewPreparation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewPreparation.release.xcconfig"; path = "Target Support Files/Pods-InterviewPreparation/Pods-InterviewPreparation.release.xcconfig"; sourceTree = "<group>"; };
 		1863ABA627EC233000575DEC /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		18AA864527F435D50069610E /* CombineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CombineViewController.xib; sourceTree = "<group>"; };
 		18AA864C27F4389B0069610E /* CombineViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewModal.swift; sourceTree = "<group>"; };
 		18AA865527F47A0D0069610E /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
-		18C57C3D27EB1A7800F2AA77 /* LearningWithPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningWithPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C57C3D27EB1A7800F2AA77 /* InterviewPreparation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewPreparation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C57C4027EB1A7800F2AA77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C57C4227EB1A7800F2AA77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18C57C4427EB1A7800F2AA77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,23 +143,20 @@
 		18C57C4C27EB1A7B00F2AA77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18C57C4F27EB1A7B00F2AA77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18C57C5127EB1A7B00F2AA77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18C57C5627EB1A7B00F2AA77 /* LearningWithPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningWithPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C57C5627EB1A7B00F2AA77 /* InterviewPreparationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewPreparationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C57C5A27EB1A7B00F2AA77 /* InterviewPreparationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewPreparationTests.swift; sourceTree = "<group>"; };
 		18C57C5C27EB1A7B00F2AA77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18C57C6127EB1A7B00F2AA77 /* LearningWithPOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningWithPOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C57C6127EB1A7B00F2AA77 /* InterviewPreparationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewPreparationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C57C6527EB1A7B00F2AA77 /* InterviewPreparationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewPreparationUITests.swift; sourceTree = "<group>"; };
 		18C57C6727EB1A7B00F2AA77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C57C7E27EB1EB000F2AA77 /* FirstViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModal.swift; sourceTree = "<group>"; };
 		18C57C8627EB37B200F2AA77 /* EmployeeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableCell.swift; sourceTree = "<group>"; };
 		18C57C8727EB37B200F2AA77 /* EmployeeTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableCell.xib; sourceTree = "<group>"; };
 		18C57C8D27EB456500F2AA77 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
-		2D0CF55F988ED41E26EA685E /* Pods_LearningWithPOC_LearningWithPOCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningWithPOC_LearningWithPOCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		309232FD8EC0A347C7416BAE /* Pods-LearningWithPOC-LearningWithPOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningWithPOC-LearningWithPOCUITests.debug.xcconfig"; path = "Target Support Files/Pods-LearningWithPOC-LearningWithPOCUITests/Pods-LearningWithPOC-LearningWithPOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		389DFD9350F6EBAA7C7F5686 /* Pods-InterviewPreparation-InterviewPreparationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewPreparation-InterviewPreparationUITests.release.xcconfig"; path = "Target Support Files/Pods-InterviewPreparation-InterviewPreparationUITests/Pods-InterviewPreparation-InterviewPreparationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		39A271010558C3BDC9C1423D /* Pods_InterviewPreparation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewPreparation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4435D3C7F27C1CA47B3AD5A4 /* Pods-InterviewPreparation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewPreparation.debug.xcconfig"; path = "Target Support Files/Pods-InterviewPreparation/Pods-InterviewPreparation.debug.xcconfig"; sourceTree = "<group>"; };
-		52E5B7F70124BAA9D300C396 /* Pods-LearningWithPOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningWithPOCTests.release.xcconfig"; path = "Target Support Files/Pods-LearningWithPOCTests/Pods-LearningWithPOCTests.release.xcconfig"; sourceTree = "<group>"; };
 		6DEEA825A79EC1968816410C /* Pods-InterviewPreparation-InterviewPreparationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewPreparation-InterviewPreparationUITests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewPreparation-InterviewPreparationUITests/Pods-InterviewPreparation-InterviewPreparationUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		736CE31E62ED33A3B230DA28 /* Pods-LearningWithPOC-LearningWithPOCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningWithPOC-LearningWithPOCUITests.release.xcconfig"; path = "Target Support Files/Pods-LearningWithPOC-LearningWithPOCUITests/Pods-LearningWithPOC-LearningWithPOCUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A8E9BC1282A4041007CC790 /* SearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTests.swift; sourceTree = "<group>"; };
 		7A8E9BC3282A6E62007CC790 /* AlgorithamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithamTests.swift; sourceTree = "<group>"; };
 		7A961F5F2828F4EE001CC552 /* DeviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviderTest.swift; sourceTree = "<group>"; };
@@ -221,11 +218,7 @@
 		7ADFBCBD282546E100D3E734 /* DSA.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DSA.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7ADFBCBE28254E3600D3E734 /* DSAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSAViewController.swift; sourceTree = "<group>"; };
 		85A4726A115E44E24C15448D /* Pods-InterviewPreparationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewPreparationTests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewPreparationTests/Pods-InterviewPreparationTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A1E71C0CA2ECB50069479045 /* Pods-LearningWithPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningWithPOC.release.xcconfig"; path = "Target Support Files/Pods-LearningWithPOC/Pods-LearningWithPOC.release.xcconfig"; sourceTree = "<group>"; };
-		A71D59663CD70192560AD10E /* Pods-LearningWithPOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningWithPOCTests.debug.xcconfig"; path = "Target Support Files/Pods-LearningWithPOCTests/Pods-LearningWithPOCTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BFBC8249B9EDB69B8A942299 /* Pods_LearningWithPOCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningWithPOCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1DE4202CF76E1367562E638 /* Pods_LearningWithPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningWithPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF98A87DF7F49645CB1CB399 /* Pods-LearningWithPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningWithPOC.debug.xcconfig"; path = "Target Support Files/Pods-LearningWithPOC/Pods-LearningWithPOC.debug.xcconfig"; sourceTree = "<group>"; };
+		C67BE237BEB030B48C1E11C2 /* Pods_InterviewPreparation_InterviewPreparationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewPreparation_InterviewPreparationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,7 +229,7 @@
 				7ADFBC71280E866B00D3E734 /* RxCocoa in Frameworks */,
 				7ABC85DF280466BA00E329B7 /* Alamofire in Frameworks */,
 				7ADFBC73280E866B00D3E734 /* RxSwift in Frameworks */,
-				7DFED79FDDF7F54E3D74A87E /* Pods_LearningWithPOC.framework in Frameworks */,
+				C2A10A4C4537A231FCBD897B /* Pods_InterviewPreparation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +237,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5F7D55873F802A5DFE3179F /* Pods_LearningWithPOCTests.framework in Frameworks */,
+				F4C197FDB0E7BDAF7662FD83 /* Pods_InterviewPreparationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +245,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57FB885D050C7D5E2DBB7E77 /* Pods_LearningWithPOC_LearningWithPOCUITests.framework in Frameworks */,
+				73FBFB12918BE16530331F8B /* Pods_InterviewPreparation_InterviewPreparationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +277,8 @@
 			isa = PBXGroup;
 			children = (
 				18C57C3F27EB1A7800F2AA77 /* InterviewPreparation */,
-				18C57C5927EB1A7B00F2AA77 /* InterviewPreparation Tests */,
-				18C57C6427EB1A7B00F2AA77 /* InterviewPreparation UITests */,
+				18C57C5927EB1A7B00F2AA77 /* InterviewPreparationTests */,
+				18C57C6427EB1A7B00F2AA77 /* InterviewPreparationUITests */,
 				18C57C3E27EB1A7800F2AA77 /* Products */,
 				836C9A42E949E6A774D95AC4 /* Pods */,
 				756BF501C436CBAF854CD365 /* Frameworks */,
@@ -295,9 +288,9 @@
 		18C57C3E27EB1A7800F2AA77 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18C57C3D27EB1A7800F2AA77 /* LearningWithPOC.app */,
-				18C57C5627EB1A7B00F2AA77 /* LearningWithPOCTests.xctest */,
-				18C57C6127EB1A7B00F2AA77 /* LearningWithPOCUITests.xctest */,
+				18C57C3D27EB1A7800F2AA77 /* InterviewPreparation.app */,
+				18C57C5627EB1A7B00F2AA77 /* InterviewPreparationTests.xctest */,
+				18C57C6127EB1A7B00F2AA77 /* InterviewPreparationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -324,7 +317,7 @@
 			path = InterviewPreparation;
 			sourceTree = "<group>";
 		};
-		18C57C5927EB1A7B00F2AA77 /* InterviewPreparation Tests */ = {
+		18C57C5927EB1A7B00F2AA77 /* InterviewPreparationTests */ = {
 			isa = PBXGroup;
 			children = (
 				18C57C5A27EB1A7B00F2AA77 /* InterviewPreparationTests.swift */,
@@ -334,16 +327,16 @@
 				7A8E9BC1282A4041007CC790 /* SearchTests.swift */,
 				7A8E9BC3282A6E62007CC790 /* AlgorithamTests.swift */,
 			);
-			path = "InterviewPreparation Tests";
+			path = InterviewPreparationTests;
 			sourceTree = "<group>";
 		};
-		18C57C6427EB1A7B00F2AA77 /* InterviewPreparation UITests */ = {
+		18C57C6427EB1A7B00F2AA77 /* InterviewPreparationUITests */ = {
 			isa = PBXGroup;
 			children = (
 				18C57C6527EB1A7B00F2AA77 /* InterviewPreparationUITests.swift */,
 				18C57C6727EB1A7B00F2AA77 /* Info.plist */,
 			);
-			path = "InterviewPreparation UITests";
+			path = InterviewPreparationUITests;
 			sourceTree = "<group>";
 		};
 		18C57C7627EB1A9000F2AA77 /* View */ = {
@@ -417,9 +410,9 @@
 		756BF501C436CBAF854CD365 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D1DE4202CF76E1367562E638 /* Pods_LearningWithPOC.framework */,
-				2D0CF55F988ED41E26EA685E /* Pods_LearningWithPOC_LearningWithPOCUITests.framework */,
-				BFBC8249B9EDB69B8A942299 /* Pods_LearningWithPOCTests.framework */,
+				39A271010558C3BDC9C1423D /* Pods_InterviewPreparation.framework */,
+				C67BE237BEB030B48C1E11C2 /* Pods_InterviewPreparation_InterviewPreparationUITests.framework */,
+				0A39F592E89D4EC32087DE66 /* Pods_InterviewPreparationTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -554,12 +547,6 @@
 				389DFD9350F6EBAA7C7F5686 /* Pods-InterviewPreparation-InterviewPreparationUITests.release.xcconfig */,
 				85A4726A115E44E24C15448D /* Pods-InterviewPreparationTests.debug.xcconfig */,
 				0AC37C7B65CDB1F6F4B7957B /* Pods-InterviewPreparationTests.release.xcconfig */,
-				FF98A87DF7F49645CB1CB399 /* Pods-LearningWithPOC.debug.xcconfig */,
-				A1E71C0CA2ECB50069479045 /* Pods-LearningWithPOC.release.xcconfig */,
-				309232FD8EC0A347C7416BAE /* Pods-LearningWithPOC-LearningWithPOCUITests.debug.xcconfig */,
-				736CE31E62ED33A3B230DA28 /* Pods-LearningWithPOC-LearningWithPOCUITests.release.xcconfig */,
-				A71D59663CD70192560AD10E /* Pods-LearningWithPOCTests.debug.xcconfig */,
-				52E5B7F70124BAA9D300C396 /* Pods-LearningWithPOCTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -567,9 +554,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18C57C3C27EB1A7800F2AA77 /* LearningWithPOC */ = {
+		18C57C3C27EB1A7800F2AA77 /* InterviewPreparation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18C57C6A27EB1A7B00F2AA77 /* Build configuration list for PBXNativeTarget "LearningWithPOC" */;
+			buildConfigurationList = 18C57C6A27EB1A7B00F2AA77 /* Build configuration list for PBXNativeTarget "InterviewPreparation" */;
 			buildPhases = (
 				8F9F7972CD3AAC4D0B9F3D74 /* [CP] Check Pods Manifest.lock */,
 				18C57C3927EB1A7800F2AA77 /* Sources */,
@@ -580,19 +567,19 @@
 			);
 			dependencies = (
 			);
-			name = LearningWithPOC;
+			name = InterviewPreparation;
 			packageProductDependencies = (
 				7ABC85DE280466BA00E329B7 /* Alamofire */,
 				7ADFBC70280E866B00D3E734 /* RxCocoa */,
 				7ADFBC72280E866B00D3E734 /* RxSwift */,
 			);
 			productName = InterviewPreparation;
-			productReference = 18C57C3D27EB1A7800F2AA77 /* LearningWithPOC.app */;
+			productReference = 18C57C3D27EB1A7800F2AA77 /* InterviewPreparation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		18C57C5527EB1A7B00F2AA77 /* LearningWithPOCTests */ = {
+		18C57C5527EB1A7B00F2AA77 /* InterviewPreparationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18C57C6D27EB1A7B00F2AA77 /* Build configuration list for PBXNativeTarget "LearningWithPOCTests" */;
+			buildConfigurationList = 18C57C6D27EB1A7B00F2AA77 /* Build configuration list for PBXNativeTarget "InterviewPreparationTests" */;
 			buildPhases = (
 				C4D22AE271A114156F2DA0A6 /* [CP] Check Pods Manifest.lock */,
 				18C57C5227EB1A7B00F2AA77 /* Sources */,
@@ -604,14 +591,14 @@
 			dependencies = (
 				18C57C5827EB1A7B00F2AA77 /* PBXTargetDependency */,
 			);
-			name = LearningWithPOCTests;
+			name = InterviewPreparationTests;
 			productName = InterviewPreparationTests;
-			productReference = 18C57C5627EB1A7B00F2AA77 /* LearningWithPOCTests.xctest */;
+			productReference = 18C57C5627EB1A7B00F2AA77 /* InterviewPreparationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		18C57C6027EB1A7B00F2AA77 /* LearningWithPOCUITests */ = {
+		18C57C6027EB1A7B00F2AA77 /* InterviewPreparationUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18C57C7027EB1A7B00F2AA77 /* Build configuration list for PBXNativeTarget "LearningWithPOCUITests" */;
+			buildConfigurationList = 18C57C7027EB1A7B00F2AA77 /* Build configuration list for PBXNativeTarget "InterviewPreparationUITests" */;
 			buildPhases = (
 				5993949462D1E563240C9385 /* [CP] Check Pods Manifest.lock */,
 				18C57C5D27EB1A7B00F2AA77 /* Sources */,
@@ -623,9 +610,9 @@
 			dependencies = (
 				18C57C6327EB1A7B00F2AA77 /* PBXTargetDependency */,
 			);
-			name = LearningWithPOCUITests;
+			name = InterviewPreparationUITests;
 			productName = InterviewPreparationUITests;
-			productReference = 18C57C6127EB1A7B00F2AA77 /* LearningWithPOCUITests.xctest */;
+			productReference = 18C57C6127EB1A7B00F2AA77 /* InterviewPreparationUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -668,9 +655,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18C57C3C27EB1A7800F2AA77 /* LearningWithPOC */,
-				18C57C5527EB1A7B00F2AA77 /* LearningWithPOCTests */,
-				18C57C6027EB1A7B00F2AA77 /* LearningWithPOCUITests */,
+				18C57C3C27EB1A7800F2AA77 /* InterviewPreparation */,
+				18C57C5527EB1A7B00F2AA77 /* InterviewPreparationTests */,
+				18C57C6027EB1A7B00F2AA77 /* InterviewPreparationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -692,7 +679,6 @@
 				18C57C4827EB1A7800F2AA77 /* Main.storyboard in Resources */,
 				7ADFBC972812BF2400D3E734 /* PlayerCollectionCell.xib in Resources */,
 				18847E9027F6B7A000B7D7C4 /* CompositionViewController.xib in Resources */,
-				7A5A4A2C282A9D38001B07E8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,7 +714,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LearningWithPOC-LearningWithPOCUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-InterviewPreparation-InterviewPreparationUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -750,7 +736,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LearningWithPOC-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-InterviewPreparation-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -772,7 +758,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LearningWithPOCTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-InterviewPreparationTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -881,12 +867,12 @@
 /* Begin PBXTargetDependency section */
 		18C57C5827EB1A7B00F2AA77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 18C57C3C27EB1A7800F2AA77 /* LearningWithPOC */;
+			target = 18C57C3C27EB1A7800F2AA77 /* InterviewPreparation */;
 			targetProxy = 18C57C5727EB1A7B00F2AA77 /* PBXContainerItemProxy */;
 		};
 		18C57C6327EB1A7B00F2AA77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 18C57C3C27EB1A7800F2AA77 /* LearningWithPOC */;
+			target = 18C57C3C27EB1A7800F2AA77 /* InterviewPreparation */;
 			targetProxy = 18C57C6227EB1A7B00F2AA77 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1029,17 +1015,17 @@
 		};
 		18C57C6B27EB1A7B00F2AA77 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF98A87DF7F49645CB1CB399 /* Pods-LearningWithPOC.debug.xcconfig */;
+			baseConfigurationReference = 4435D3C7F27C1CA47B3AD5A4 /* Pods-InterviewPreparation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LearningWithPOC/Info.plist;
+				INFOPLIST_FILE = InterviewPreparation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.oum.LearningWithPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oum.InterviewPreparation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1048,17 +1034,17 @@
 		};
 		18C57C6C27EB1A7B00F2AA77 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1E71C0CA2ECB50069479045 /* Pods-LearningWithPOC.release.xcconfig */;
+			baseConfigurationReference = 154AE3E564384B1D564F0FC8 /* Pods-InterviewPreparation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LearningWithPOC/Info.plist;
+				INFOPLIST_FILE = InterviewPreparation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.oum.LearningWithPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oum.InterviewPreparation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1067,7 +1053,7 @@
 		};
 		18C57C6E27EB1A7B00F2AA77 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A71D59663CD70192560AD10E /* Pods-LearningWithPOCTests.debug.xcconfig */;
+			baseConfigurationReference = 85A4726A115E44E24C15448D /* Pods-InterviewPreparationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1083,13 +1069,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearningWithPOC.app/LearningWithPOC";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InterviewPreparation.app/InterviewPreparation";
 			};
 			name = Debug;
 		};
 		18C57C6F27EB1A7B00F2AA77 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52E5B7F70124BAA9D300C396 /* Pods-LearningWithPOCTests.release.xcconfig */;
+			baseConfigurationReference = 0AC37C7B65CDB1F6F4B7957B /* Pods-InterviewPreparationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1105,13 +1091,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearningWithPOC.app/LearningWithPOC";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InterviewPreparation.app/InterviewPreparation";
 			};
 			name = Release;
 		};
 		18C57C7127EB1A7B00F2AA77 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 309232FD8EC0A347C7416BAE /* Pods-LearningWithPOC-LearningWithPOCUITests.debug.xcconfig */;
+			baseConfigurationReference = 6DEEA825A79EC1968816410C /* Pods-InterviewPreparation-InterviewPreparationUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1131,7 +1117,7 @@
 		};
 		18C57C7227EB1A7B00F2AA77 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 736CE31E62ED33A3B230DA28 /* Pods-LearningWithPOC-LearningWithPOCUITests.release.xcconfig */;
+			baseConfigurationReference = 389DFD9350F6EBAA7C7F5686 /* Pods-InterviewPreparation-InterviewPreparationUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1161,7 +1147,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18C57C6A27EB1A7B00F2AA77 /* Build configuration list for PBXNativeTarget "LearningWithPOC" */ = {
+		18C57C6A27EB1A7B00F2AA77 /* Build configuration list for PBXNativeTarget "InterviewPreparation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18C57C6B27EB1A7B00F2AA77 /* Debug */,
@@ -1170,7 +1156,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18C57C6D27EB1A7B00F2AA77 /* Build configuration list for PBXNativeTarget "LearningWithPOCTests" */ = {
+		18C57C6D27EB1A7B00F2AA77 /* Build configuration list for PBXNativeTarget "InterviewPreparationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18C57C6E27EB1A7B00F2AA77 /* Debug */,
@@ -1179,7 +1165,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18C57C7027EB1A7B00F2AA77 /* Build configuration list for PBXNativeTarget "LearningWithPOCUITests" */ = {
+		18C57C7027EB1A7B00F2AA77 /* Build configuration list for PBXNativeTarget "InterviewPreparationUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18C57C7127EB1A7B00F2AA77 /* Debug */,
